@@ -23,7 +23,6 @@
     "preserveConstEnums": true,
     "outDir": ".next",
     "downlevelIteration": true,
-
     "plugins": [
       {
         "name": "next"
