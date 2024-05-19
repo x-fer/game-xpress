@@ -7,7 +7,11 @@ const Step2 = () => {
         <p className="text-2xl md:text-4xl lg:text-5xl">
           <strong className="text-purple">Game X.PRESS</strong> je studentsko natjecanje u izradi video igara poznatije
           kao{' '}
-          <a href="https://en.wikipedia.org/wiki/Game_jam" className="underline">
+          <a
+            href="https://en.wikipedia.org/wiki/Game_jam"
+            aria-label="Pročitajte više o Game jam natjecanjima"
+            className="underline"
+          >
             Game jam
           </a>
           . Traje 24h i održati će se uživo. Prijaviti se mogu svi studenti, neovisno kojem sveučilištu pripadaju.
