@@ -4,3 +4,5 @@ export * from './pages'
 export { default as ButtonSignUp } from './ButtonSignUp'
 
 export * from './countdown'
+
+export { default as JumpingArrow } from './JumpingArrow'
