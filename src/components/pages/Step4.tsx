@@ -5,13 +5,13 @@ const Step4 = () => {
     <StepContainer className="bg-green">
       <div className="h-full w-full flex-col items-start p-6 sm:p-8 md:p-10 lg:p-12">
         <h2 className="text-5xl font-bold text-purple md:text-6xl lg:text-7xl">Bodovanje</h2>
-        <ul className="mt-6 text-3xl text-white">
+        <ul className="mt-6 text-xl text-white md:text-2xl lg:text-3xl">
           <li>40% → stručni žiri</li>
           <li>60% → peer review između natjecatelja</li>
         </ul>
 
         <h2 className="mt-10 text-5xl font-bold text-purple md:text-6xl lg:text-7xl">Kriteriji žirija</h2>
-        <ul className="mt-6 text-3xl text-white">
+        <ul className="mt-6 text-xl text-white md:text-2xl lg:text-3xl">
           <li>Kretivnost - 20%</li>
           <li>Funkcionalnost - 30%</li>
           <li>Dizajn - 20%</li>

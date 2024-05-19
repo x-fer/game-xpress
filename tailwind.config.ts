@@ -6,10 +6,14 @@ const config: Config = {
     extend: {
       colors: {
         blue: '#3F88C5',
+        'dark-blue': '#032B43',
         red: '#EF5B5B',
         yellow: '#FFBA49',
         green: '#136F63',
         purple: '#23001E',
+        gray: '#50514F',
+        turquoise: '#CCF5AC',
+        pink: '#FFCAD4',
       },
     },
   },

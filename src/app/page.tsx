@@ -1,4 +1,5 @@
-import { Step1, Step2, Step3, Step4 } from '@/components/pages'
+import { ButtonSignUp } from '@/components'
+import { Step1, Step2, Step3, Step4, Step5, Step6, Step7, Step8 } from '@/components/pages'
 
 export default function Home() {
   return (
@@ -7,6 +8,11 @@ export default function Home() {
       <Step2 />
       <Step3 />
       <Step4 />
+      <Step5 />
+      <Step6 />
+      <Step7 />
+      <Step8 />
+      <ButtonSignUp />
     </main>
   )
 }
