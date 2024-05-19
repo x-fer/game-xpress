@@ -32,7 +32,6 @@
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
       "@modules/*": ["./src/modules/*"],
-      "@pages/*": ["./src/pages/*"],
       "@lib/*": ["./src/lib/*"]
     }
   },

@@ -7,6 +7,7 @@ const Step3 = () => {
         <h2 className="text-5xl font-bold text-white md:text-6xl lg:text-7xl">Pravila</h2>
         <ul className="mt-6 rounded-lg bg-white p-4 text-3xl">
           <li>🫂 Veličina ekipe → 3 osobe</li>
+          <li>🔟 Broj ekipa → ograničen na 10 ekipa (Prijavi se što prije)</li>
           <li>🏰 Žanr → proizvoljan (Adventure, Puzzle, Simulation, FPS, MOBA...)</li>
           <li>👾 Stil → što god vas veseli (Pixel Art, 2D, 3D...)</li>
           <li>⚙️ Tehnologija → bilo koja (Unity, UE5, Godot, PyGame...)</li>

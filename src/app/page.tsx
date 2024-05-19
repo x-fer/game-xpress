@@ -1,4 +1,4 @@
-import { Step1, Step2, Step3, Step4 } from '@/pages'
+import { Step1, Step2, Step3, Step4 } from '@/components/pages'
 
 export default function Home() {
   return (
