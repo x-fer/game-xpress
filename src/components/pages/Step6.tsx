@@ -5,7 +5,7 @@ const Step6 = () => {
     <StepContainer className="bg-turquoise flex-1 pb-14">
       <div className="h-full w-full flex-col items-start p-6 sm:p-8 md:p-10 lg:p-12">
         <h2 className="text-5xl font-bold text-purple md:text-6xl lg:text-7xl">Organizatori #1</h2>
-        <p className="text-gray mt-10 text-lg md:text-2xl lg:text-3xl">
+        <p className="text-gray mt-8 text-lg md:text-2xl lg:text-3xl">
           <a href="https://xfer.hr/" className="font-extrabold underline hover:text-red">
             X.FER
           </a>{' '}

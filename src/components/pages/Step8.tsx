@@ -11,12 +11,6 @@ const Step8 = () => {
             </h1>
             <Countdown />
           </div>
-          <a
-            href=""
-            className="bg-gray rounded-md px-3.5 py-2.5 text-6xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:px-7 md:py-6 md:text-7xl lg:text-8xl"
-          >
-            PRIJAVI SE!!!
-          </a>
         </div>
       </StepContainer>
     </>
