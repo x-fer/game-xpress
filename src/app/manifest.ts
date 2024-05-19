@@ -2,9 +2,10 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Game X.PRESS',
+    name: 'Game X.PRESS - studentsko natjecanje u izradi video igara',
     short_name: 'Game X.PRESS',
-    description: 'Studentsko natjecanje u izradi video igara',
+    description:
+      'Game X.PRESS je studentsko natjecanje u izradi video igara poznatije kao Game Jam. Traje 24h, a održati će se 8. i 9. lipnja 2024.',
     start_url: 'https://game-xpress.xfer.hr',
     display: 'standalone',
     background_color: '#2EC6FE',
