@@ -9,7 +9,7 @@ const Countdown = () => {
   const [days, hours, minutes, seconds] = useCountdown(new Date(END_DATE).getTime())
 
   return (
-    <div className="border-gray flex w-full items-center justify-center gap-1 rounded-lg border px-2 py-4 md:w-max md:flex-1 md:gap-2 md:px-4">
+    <div className="flex w-full items-center justify-center gap-1 rounded-lg border border-gray bg-white px-2 py-4 md:w-max md:flex-1 md:gap-2 md:px-4">
       {days + hours + minutes + seconds <= 0 ? (
         <ExpiredNotice />
       ) : (

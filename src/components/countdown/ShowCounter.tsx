@@ -14,7 +14,7 @@ const ShowCounter = ({
 }) => {
   return (
     <>
-      <span className="text-gray mr-3 w-fit text-xl font-semibold md:mr-6 md:text-2xl lg:text-3xl">Do kraja:</span>
+      <span className="mr-3 w-fit text-xl font-semibold text-black md:mr-6 md:text-2xl lg:text-3xl">Do kraja:</span>
       <DateTimeDisplay value={days} type={'Dan'} isDanger={days <= 3} />
       <p>:</p>
       <DateTimeDisplay value={hours} type={'Sat'} isDanger={days <= 3} />
