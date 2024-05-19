@@ -12,7 +12,7 @@ const Step4 = () => {
 
         <h2 className="mt-10 text-5xl font-bold text-purple md:text-6xl lg:text-7xl">Kriteriji žirija</h2>
         <ul className="mt-6 text-xl text-white md:text-2xl lg:text-3xl">
-          <li>Kretivnost - 20%</li>
+          <li>Kreativnost - 20%</li>
           <li>Funkcionalnost - 30%</li>
           <li>Dizajn - 20%</li>
           <li>Ukupan dojam - 20%</li>

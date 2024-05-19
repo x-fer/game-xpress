@@ -11,7 +11,7 @@ const Step1 = () => {
             Game X.PRESS
           </h1>
           <div className=" w-full lg:w-[70%]">
-            <Image src={heroImage} alt="Game X.PRESS Hero Image" style={{ objectFit: 'contain' }} />
+            <Image src={heroImage} alt="Game X.PRESS Hero Image" style={{ objectFit: 'contain' }} priority />
           </div>
         </div>
         <JumpingArrow />
