@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Game X.PRESS - studentsko natjecanje u izradi video igara',
   description:
     'Game X.PRESS je studentsko natjecanje u izradi video igara poznatije kao Game Jam. Traje 24h, a održati će se 8. i 9. lipnja 2024.',
+  keywords: [
+    'game jam',
+    'Game X.PRESS',
+    'game express',
+    'video game development',
+    'student competition',
+    '24-hour game jam',
+    'game development contest',
+    'student game jam',
+    'video game jam',
+    'game development challenge',
+    'video igre natjecanje',
+    'studentsko natjecanje',
+    'game jam natjecanje',
+  ],
   openGraph: {
     title: 'Game X.PRESS - studentsko natjecanje u izradi video igara',
     description:
