@@ -8,13 +8,12 @@ const Step7 = () => {
 
         <p className="mt-10 text-lg text-white md:text-2xl lg:text-3xl">
           <a href="https://esports.fer.hr/" className="font-extrabold underline hover:text-blue">
-            FER ESports
+            FER esports
           </a>{' '}
-          je studentska udruga na Fakultetu elektrotehnike i računarstva, osnovana 2017. godine. Okupljamo ljubitelje
-          računalnih igara i sudjelujemo na esport događajima diljem Hrvatske. Organiziramo turnire, uključujući FER
-          Esports Championship, te sudjelujemo na STEM Games. Naša sekcija ima preko stotinu igrača i volontera koji
-          vode treninge i pripreme za natjecanja. Cilj nam je promovirati esport među studentima i mladima te potaknuti
-          razvoj zdrave konkurencije u esportu.
+          je studentska udruga na Fakultetu elektrotehnike i računarstva, osnovana 2017. godine. Okupljamo ljubitelje i
+          entuzijaste računalnih igara te sudjelujemo na esports natjecanjima diljem Hrvatske. Organiziramo FER esports
+          Championship te sudjelujemo u organizaciji UniZG, UniHR, STEM Games i brojnih drugih esports natjecanja. Cilj
+          nam je promovirati esport među studentima i mladima te potaknuti razvoj zdrave konkurencije u esportu.
         </p>
       </div>
     </StepContainer>
