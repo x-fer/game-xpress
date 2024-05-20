@@ -67,10 +67,10 @@ const Step6 = () => {
           <a
             href="https://www.linkedin.com/company/xferhr"
             target="_blank"
-            aria-label="Posjetite X.FER Linkedin stranicu"
+            aria-label="Posjetite X.FER LinkedIn stranicu"
             className="ml-2 flex items-end gap-2 text-xl underline hover:text-red md:ml-0 md:text-2xl lg:text-3xl"
           >
-            <Linkedin size={40} /> <p className="hidden md:block"> Linkedin</p>
+            <Linkedin size={40} /> <p className="hidden md:block"> LinkedIn</p>
           </a>
         </div>
       </div>
