@@ -10,7 +10,7 @@ const Step2 = () => {
           <a
             href="https://en.wikipedia.org/wiki/Game_jam"
             aria-label="Pročitajte više o Game jam natjecanjima"
-            className="underline"
+            className="underline hover:text-blue "
           >
             Game jam
           </a>

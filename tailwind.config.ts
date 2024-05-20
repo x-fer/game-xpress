@@ -11,7 +11,7 @@ const config: Config = {
         yellow: '#FFBA49',
         green: '#136F63',
         purple: '#23001E',
-        gray: '#7D8491',
+        gray: '#717684',
         turquoise: '#CCF5AC',
         pink: '#FFCAD4',
       },
