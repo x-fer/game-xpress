@@ -1,4 +1,3 @@
-'use client'
 import DateTimeDisplay from './DateTimeDisplay'
 
 const ShowCounter = ({

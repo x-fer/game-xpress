@@ -1,4 +1,6 @@
-import { Countdown, StepContainer } from '@/components'
+import { StepContainer } from '@/components'
+import dynamic from 'next/dynamic'
+const Countdown = dynamic(() => import('@/components/countdown/Countdown'), { ssr: false })
 
 const Step8 = () => {
   return (
