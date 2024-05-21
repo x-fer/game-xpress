@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Game X.PRESS - studentsko natjecanje u izradi video igara',
     short_name: 'Game X.PRESS',
     description:
-      'Game X.PRESS je studentsko natjecanje u izradi video igara poznatije kao Game Jam. Traje 24h, a održati će se 8. i 9. lipnja 2024. u Zagrebu',
+      'Game X.PRESS je studentsko natjecanje u izradi video igara poznatije kao Game Jam. Traje 24h, a održat će se 8. i 9. lipnja 2024. u Zagrebu',
     start_url: 'https://game-xpress.xfer.hr',
     display: 'standalone',
     background_color: '#2EC6FE',

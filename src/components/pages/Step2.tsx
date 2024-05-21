@@ -14,7 +14,7 @@ const Step2 = () => {
           >
             Game jam
           </a>
-          . Traje 24h i održati će se uživo. Prijaviti se mogu svi studenti, neovisno kojem sveučilištu pripadaju.
+          . Traje 24h i održat će se uživo. Prijaviti se mogu svi studenti, neovisno kojem sveučilištu pripadaju.
         </p>
       </div>
     </StepContainer>
