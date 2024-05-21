@@ -26,7 +26,7 @@ const Step7 = () => {
             href="https://www.facebook.com/FEResports/"
             target="_blank"
             aria-label="Posjetite FER esports Facebook stranicu"
-            className="flex items-end gap-2 text-xl underline hover:text-blue md:text-2xl lg:text-3xl"
+            className="flex w-fit  items-end gap-2 text-xl underline hover:text-blue md:text-2xl lg:text-3xl"
           >
             <Facebook size={40} /> <p className="hidden md:block"> Facebook</p>
           </a>
@@ -34,7 +34,7 @@ const Step7 = () => {
             href="https://www.instagram.com/fer_esports"
             target="_blank"
             aria-label="Posjetite FER esports Instagram stranicu"
-            className="ml-1 flex items-end gap-2 text-xl underline hover:text-blue md:ml-0 md:text-2xl  lg:text-3xl "
+            className="ml-1 flex w-fit  items-end gap-2 text-xl underline hover:text-blue md:ml-0 md:text-2xl  lg:text-3xl "
           >
             <Instagram size={40} /> <p className="hidden md:block"> Instagram</p>
           </a>
@@ -42,7 +42,7 @@ const Step7 = () => {
             href="https://www.linkedin.com/company/fer-esports/about/"
             target="_blank"
             aria-label="Posjetite FER esports LinkedIn stranicu"
-            className="ml-2 flex items-end gap-2 text-xl underline hover:text-blue  md:ml-0  md:text-2xl lg:text-3xl"
+            className="ml-2 flex w-fit items-end gap-2 text-xl underline hover:text-blue  md:ml-0  md:text-2xl lg:text-3xl"
           >
             <Linkedin size={40} /> <p className="hidden md:block"> LinkedIn</p>
           </a>

@@ -52,7 +52,7 @@ const Step6 = () => {
             href="https://www.facebook.com/xferhr"
             target="_blank"
             aria-label="Posjetite X.FER Facebook stranicu"
-            className="flex items-end gap-2 text-xl underline hover:text-red md:text-2xl lg:text-3xl "
+            className="flex w-fit items-end gap-2 text-xl underline hover:text-red md:text-2xl lg:text-3xl "
           >
             <Facebook size={40} /> <p className="hidden  md:block"> Facebook</p>
           </a>
@@ -60,7 +60,7 @@ const Step6 = () => {
             href="https://www.instagram.com/xfer_hr"
             target="_blank"
             aria-label="Posjetite X.FER Instagram stranicu"
-            className="ml-1 flex items-end gap-2 text-xl underline hover:text-red md:ml-0 md:text-2xl lg:text-3xl"
+            className="ml-1 flex w-fit items-end gap-2 text-xl underline hover:text-red md:ml-0 md:text-2xl lg:text-3xl"
           >
             <Instagram size={40} /> <p className="hidden md:block"> Instagram</p>
           </a>
@@ -68,7 +68,7 @@ const Step6 = () => {
             href="https://www.linkedin.com/company/xferhr"
             target="_blank"
             aria-label="Posjetite X.FER LinkedIn stranicu"
-            className="ml-2 flex items-end gap-2 text-xl underline hover:text-red md:ml-0 md:text-2xl lg:text-3xl"
+            className="ml-2 flex w-fit  items-end gap-2 text-xl underline hover:text-red md:ml-0 md:text-2xl lg:text-3xl"
           >
             <Linkedin size={40} /> <p className="hidden md:block"> LinkedIn</p>
           </a>
