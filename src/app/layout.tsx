@@ -5,7 +5,7 @@ import '../styles/globals.css'
 export const metadata: Metadata = {
   title: 'Game X.PRESS - studentsko natjecanje u izradi video igara',
   description:
-    'Game X.PRESS je studentsko natjecanje u izradi video igara poznatije kao Game Jam. Traje 24h, a održati će se 8. i 9. lipnja 2024.',
+    'Game X.PRESS je studentsko natjecanje u izradi video igara poznatije kao Game Jam. Traje 24h, a održati će se 8. i 9. lipnja 2024. u Zagrebu',
   keywords: [
     'game jam',
     'Game X.PRESS',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Game X.PRESS - studentsko natjecanje u izradi video igara',
     description:
-      'Game X.PRESS je studentsko natjecanje u izradi video igara poznatije kao Game Jam. Traje 24h, a održati će se 8. i 9. lipnja 2024.',
+      'Game X.PRESS je studentsko natjecanje u izradi video igara poznatije kao Game Jam. Traje 24h, a održati će se 8. i 9. lipnja 2024. u Zagrebu',
     url: 'https://game-xpress.xfer.hr/',
     type: 'website',
     locale: 'hr_HR',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Game X.PRESS',
     description:
-      'Game X.PRESS je studentsko natjecanje u izradi video igara poznatije kao Game Jam. Traje 24h, a održati će se 8. i 9. lipnja 2024.',
+      'Game X.PRESS je studentsko natjecanje u izradi video igara poznatije kao Game Jam. Traje 24h, a održati će se 8. i 9. lipnja 2024. u Zagrebu',
     creator: '@x.fer',
     images: ['https://game-xpress.xfer.hr/static/images/hero-image.webp'],
   },
