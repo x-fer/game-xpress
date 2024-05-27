@@ -11,6 +11,7 @@ const Step7 = () => {
           <a
             href="https://esports.fer.hr/"
             target="_blank"
+            rel="noreferrer noopener"
             aria-label="Pročitajte više o studentskoj udruzi FER esports"
             className="font-extrabold underline hover:text-blue"
           >
@@ -25,6 +26,7 @@ const Step7 = () => {
           <a
             href="https://www.facebook.com/FEResports/"
             target="_blank"
+            rel="noreferrer noopener"
             aria-label="Posjetite FER esports Facebook stranicu"
             className="flex w-fit  items-end gap-2 text-xl underline hover:text-blue md:text-2xl lg:text-3xl"
           >
@@ -33,6 +35,7 @@ const Step7 = () => {
           <a
             href="https://www.instagram.com/fer_esports"
             target="_blank"
+            rel="noreferrer noopener"
             aria-label="Posjetite FER esports Instagram stranicu"
             className="ml-1 flex w-fit  items-end gap-2 text-xl underline hover:text-blue md:ml-0 md:text-2xl  lg:text-3xl "
           >
@@ -41,6 +44,7 @@ const Step7 = () => {
           <a
             href="https://www.linkedin.com/company/fer-esports/about/"
             target="_blank"
+            rel="noreferrer noopener"
             aria-label="Posjetite FER esports LinkedIn stranicu"
             className="ml-2 flex w-fit items-end gap-2 text-xl underline hover:text-blue  md:ml-0  md:text-2xl lg:text-3xl"
           >

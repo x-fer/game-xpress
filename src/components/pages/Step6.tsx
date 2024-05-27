@@ -10,6 +10,7 @@ const Step6 = () => {
           <a
             href="https://xfer.hr/"
             target="_blank"
+            rel="noreferrer noopener"
             aria-label="Pročitajte više o studentskoj udruzi X.FER"
             className="font-extrabold underline hover:text-red"
           >
@@ -21,6 +22,7 @@ const Step6 = () => {
           <a
             href="https://algotrade.xfer.hr/"
             target="_blank"
+            rel="noreferrer noopener"
             aria-label="Pročitajte više o Algotrade natjecanju"
             className="text-bold underline hover:text-red"
           >
@@ -30,6 +32,7 @@ const Step6 = () => {
           <a
             href="https://snap.xfer.hr/"
             target="_blank"
+            rel="noreferrer noopener"
             aria-label="Pročitajte više o Snap natjecanju"
             className="text-bold underline hover:text-red"
           >
@@ -39,6 +42,7 @@ const Step6 = () => {
           <a
             href="https://dosasce.xfer.hr/"
             target="_blank"
+            rel="noreferrer noopener"
             aria-label="Pročitajte više o Došašće++ natjecanju"
             className="text-bold underline hover:text-red"
           >
@@ -51,6 +55,7 @@ const Step6 = () => {
           <a
             href="https://www.facebook.com/xferhr"
             target="_blank"
+            rel="noreferrer noopener"
             aria-label="Posjetite X.FER Facebook stranicu"
             className="flex w-fit items-end gap-2 text-xl underline hover:text-red md:text-2xl lg:text-3xl "
           >
@@ -59,6 +64,7 @@ const Step6 = () => {
           <a
             href="https://www.instagram.com/xfer_hr"
             target="_blank"
+            rel="noreferrer noopener"
             aria-label="Posjetite X.FER Instagram stranicu"
             className="ml-1 flex w-fit items-end gap-2 text-xl underline hover:text-red md:ml-0 md:text-2xl lg:text-3xl"
           >
@@ -67,6 +73,7 @@ const Step6 = () => {
           <a
             href="https://www.linkedin.com/company/xferhr"
             target="_blank"
+            rel="noreferrer noopener"
             aria-label="Posjetite X.FER LinkedIn stranicu"
             className="ml-2 flex w-fit  items-end gap-2 text-xl underline hover:text-red md:ml-0 md:text-2xl lg:text-3xl"
           >

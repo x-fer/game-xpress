@@ -9,6 +9,8 @@ const Step2 = () => {
           kao{' '}
           <a
             href="https://en.wikipedia.org/wiki/Game_jam"
+            target="_blank"
+            rel="noreferrer noopener"
             aria-label="Pročitajte više o Game jam natjecanjima"
             className="underline hover:text-blue "
           >

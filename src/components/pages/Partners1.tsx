@@ -11,6 +11,7 @@ const Partners1 = () => {
             <a
               href="https://www.fer.unizg.hr/"
               target="_blank"
+              rel="noreferrer noopener"
               aria-label="Posjetite web stranicu Fakulteta elektrotehnike i računarstva."
               className="cursor-pointer hover:bg-blue "
             >
@@ -27,6 +28,7 @@ const Partners1 = () => {
             <a
               href="https://www.algebra.hr/"
               target="_blank"
+              rel="noreferrer noopener"
               aria-label="Posjetite web stranicu sveučilišta Algebra."
               className="cursor-pointer hover:bg-blue"
             >
@@ -43,6 +45,7 @@ const Partners1 = () => {
             <a
               href="https://www.liongamelion.com/"
               target="_blank"
+              rel="noreferrer noopener"
               aria-label="Posjetite web stranicu Lion Game Lion."
               className="cursor-pointer hover:bg-blue"
             >
@@ -59,6 +62,7 @@ const Partners1 = () => {
             <a
               href="https://outfit7.com/"
               target="_blank"
+              rel="noreferrer noopener"
               aria-label="Posjetite web stranicu Outift7."
               className="cursor-pointer hover:bg-blue"
             >
@@ -72,10 +76,11 @@ const Partners1 = () => {
             </a>
           </div>
 
-          <div className="flex items-center justify-center">
+          {/* <div className="flex items-center justify-center">
             <a
               href="https://outfit7.com/"
               target="_blank"
+              rel="noreferrer noopener"
               aria-label="Posjetite web stranicu Outift7."
               className="cursor-pointer hover:bg-blue"
             >
@@ -92,6 +97,7 @@ const Partners1 = () => {
             <a
               href="https://outfit7.com/"
               target="_blank"
+              rel="noreferrer noopener"
               aria-label="Posjetite web stranicu Outift7."
               className="cursor-pointer hover:bg-blue"
             >
@@ -108,6 +114,7 @@ const Partners1 = () => {
             <a
               href="https://outfit7.com/"
               target="_blank"
+              rel="noreferrer noopener"
               aria-label="Posjetite web stranicu Outift7."
               className="cursor-pointer hover:bg-blue"
             >
@@ -124,6 +131,7 @@ const Partners1 = () => {
             <a
               href="https://outfit7.com/"
               target="_blank"
+              rel="noreferrer noopener"
               aria-label="Posjetite web stranicu Outift7."
               className="cursor-pointer hover:bg-blue"
             >
@@ -135,7 +143,7 @@ const Partners1 = () => {
                 src="/static/images/partners/outfit7.png"
               />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </StepContainer>
