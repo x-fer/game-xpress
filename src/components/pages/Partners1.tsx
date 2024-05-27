@@ -10,6 +10,7 @@ const Partners1 = () => {
           <div className="flex items-center justify-center">
             <a
               href="https://www.fer.unizg.hr/"
+              target="_blank"
               aria-label="Posjetite web stranicu Fakulteta elektrotehnike i računarstva."
               className="cursor-pointer hover:bg-blue "
             >
@@ -25,6 +26,7 @@ const Partners1 = () => {
           <div className="flex items-center justify-center">
             <a
               href="https://www.algebra.hr/"
+              target="_blank"
               aria-label="Posjetite web stranicu sveučilišta Algebra."
               className="cursor-pointer hover:bg-blue"
             >
@@ -40,6 +42,7 @@ const Partners1 = () => {
           <div className="flex items-center justify-center">
             <a
               href="https://www.liongamelion.com/"
+              target="_blank"
               aria-label="Posjetite web stranicu Lion Game Lion."
               className="cursor-pointer hover:bg-blue"
             >
@@ -55,6 +58,7 @@ const Partners1 = () => {
           <div className="flex items-center justify-center">
             <a
               href="https://outfit7.com/"
+              target="_blank"
               aria-label="Posjetite web stranicu Outift7."
               className="cursor-pointer hover:bg-blue"
             >
@@ -67,42 +71,71 @@ const Partners1 = () => {
               />
             </a>
           </div>
-          {/*<div className="flex items-center justify-center">
-            <Image
-              alt="Lion game lion Logo"
-              className="aspect-[2/1] h-20 w-20 object-contain sm:h-24 sm:w-24 md:h-28 md:w-28 lg:h-32 lg:w-32"
-              height="60"
-              width="120"
-              src="/static/images/partners/algebra.png"
-            />
+
+          <div className="flex items-center justify-center">
+            <a
+              href="https://outfit7.com/"
+              target="_blank"
+              aria-label="Posjetite web stranicu Outift7."
+              className="cursor-pointer hover:bg-blue"
+            >
+              <Image
+                alt="Outfit7 Logo"
+                className="aspect-[2/1] h-24 w-24 object-contain sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36"
+                height="60"
+                width="120"
+                src="/static/images/partners/outfit7.png"
+              />
+            </a>
           </div>
           <div className="flex items-center justify-center">
-            <Image
-              alt="Lion game lion Logo"
-              className="aspect-[2/1] h-20 w-20 object-contain sm:h-24 sm:w-24 md:h-28 md:w-28 lg:h-32 lg:w-32"
-              height="60"
-              width="120"
-              src="/static/images/partners/algebra.png"
-            />
+            <a
+              href="https://outfit7.com/"
+              target="_blank"
+              aria-label="Posjetite web stranicu Outift7."
+              className="cursor-pointer hover:bg-blue"
+            >
+              <Image
+                alt="Outfit7 Logo"
+                className="aspect-[2/1] h-24 w-24 object-contain sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36"
+                height="60"
+                width="120"
+                src="/static/images/partners/outfit7.png"
+              />
+            </a>
           </div>
           <div className="flex items-center justify-center">
-            <Image
-              alt="Lion game lion Logo"
-              className="aspect-[2/1] h-20 w-20 object-contain sm:h-24 sm:w-24 md:h-28 md:w-28 lg:h-32 lg:w-32"
-              height="60"
-              width="120"
-              src="/static/images/partners/algebra.png"
-            />
+            <a
+              href="https://outfit7.com/"
+              target="_blank"
+              aria-label="Posjetite web stranicu Outift7."
+              className="cursor-pointer hover:bg-blue"
+            >
+              <Image
+                alt="Outfit7 Logo"
+                className="aspect-[2/1] h-24 w-24 object-contain sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36"
+                height="60"
+                width="120"
+                src="/static/images/partners/outfit7.png"
+              />
+            </a>
           </div>
           <div className="flex items-center justify-center">
-            <Image
-              alt="Lion game lion Logo"
-              className="aspect-[2/1] h-20 w-20 object-contain sm:h-24 sm:w-24 md:h-28 md:w-28 lg:h-32 lg:w-32"
-              height="60"
-              width="120"
-              src="/static/images/partners/algebra.png"
-            />
-          </div> */}
+            <a
+              href="https://outfit7.com/"
+              target="_blank"
+              aria-label="Posjetite web stranicu Outift7."
+              className="cursor-pointer hover:bg-blue"
+            >
+              <Image
+                alt="Outfit7 Logo"
+                className="aspect-[2/1] h-24 w-24 object-contain sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36"
+                height="60"
+                width="120"
+                src="/static/images/partners/outfit7.png"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </StepContainer>
