@@ -1,7 +1,7 @@
 'use client'
 
 import { ButtonSignUp } from '@/components'
-import { Step1, Step2, Step3, Step4, Step5, Step6, Step7, Step8 } from '@/components/pages'
+import { Partners1, Step1, Step2, Step3, Step4, Step5, Step6, Step7, Step8 } from '@/components/pages'
 import { useScroll, useTransform } from 'framer-motion'
 import { ElementRef, useRef } from 'react'
 
@@ -24,6 +24,7 @@ export default function Home() {
         <Step3 />
         <Step4 />
         <Step5 />
+        <Partners1 />
         <Step6 />
         <Step7 />
         <Step8 />
