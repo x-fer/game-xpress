@@ -17,7 +17,7 @@ const Step5 = () => {
 
         <h2 className="mt-6 text-5xl font-bold text-black md:text-6xl lg:text-7xl">Lokacija</h2>
         <ul className="mt-6 text-xl text-white md:text-2xl lg:text-3xl">
-          <li>TBD</li>
+          <li>Algebra</li>
         </ul>
       </div>
     </StepContainer>
