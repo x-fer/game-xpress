@@ -6,7 +6,7 @@ const Partners1 = () => {
     <StepContainer className="bg-white">
       <div className="flex h-full w-full flex-col p-6 sm:p-8 md:p-10 lg:p-12">
         <h2 className="text-5xl font-bold text-black md:text-6xl lg:text-7xl">Partneri</h2>
-        <div className="mb-14 grid  w-full flex-1 grid-cols-2 gap-8 px-4 sm:grid-cols-3 md:grid-cols-4 md:px-6 lg:px-8">
+        <div className="mb-10 grid  w-full flex-1 grid-cols-2 gap-8 px-4 sm:grid-cols-3 md:grid-cols-4 md:px-6 lg:px-8">
           <div className="flex items-center justify-center">
             <a
               href="https://www.fer.unizg.hr/"
@@ -126,24 +126,6 @@ const Partners1 = () => {
                 height="60"
                 width="120"
                 src="/static/images/partners/pine-studio.png"
-              />
-            </a>
-          </div>
-
-          <div className="flex items-center justify-center">
-            <a
-              href="https://www.redbull.com/hr-hr/"
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label="Posjetite web stranicu Red Bull-a."
-              className="cursor-pointer hover:bg-blue"
-            >
-              <Image
-                alt="Red Bull Logo"
-                className="aspect-[2/1] h-24 w-24 object-contain sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36"
-                height="60"
-                width="120"
-                src="/static/images/partners/red-bull.png"
               />
             </a>
           </div>
