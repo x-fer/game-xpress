@@ -76,12 +76,12 @@ const Partners1 = () => {
             </a>
           </div>
 
-          {/* <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center">
             <a
-              href="https://outfit7.com/"
+              href="https://www.nanobit.com/"
               target="_blank"
               rel="noreferrer noopener"
-              aria-label="Posjetite web stranicu Outift7."
+              aria-label="Posjetite web stranicu Nanobit-a."
               className="cursor-pointer hover:bg-blue"
             >
               <Image
@@ -89,33 +89,35 @@ const Partners1 = () => {
                 className="aspect-[2/1] h-24 w-24 object-contain sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36"
                 height="60"
                 width="120"
-                src="/static/images/partners/outfit7.png"
+                src="/static/images/partners/nanobit.png"
               />
             </a>
           </div>
+
           <div className="flex items-center justify-center">
             <a
-              href="https://outfit7.com/"
+              href="https://enton.hr/"
               target="_blank"
               rel="noreferrer noopener"
-              aria-label="Posjetite web stranicu Outift7."
+              aria-label="Posjetite web stranicu Enton."
               className="cursor-pointer hover:bg-blue"
             >
               <Image
-                alt="Outfit7 Logo"
+                alt="Enton Logo"
                 className="aspect-[2/1] h-24 w-24 object-contain sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36"
                 height="60"
                 width="120"
-                src="/static/images/partners/outfit7.png"
+                src="/static/images/partners/enton.png"
               />
             </a>
           </div>
+
           <div className="flex items-center justify-center">
             <a
-              href="https://outfit7.com/"
+              href="https://pinestudio.com/"
               target="_blank"
               rel="noreferrer noopener"
-              aria-label="Posjetite web stranicu Outift7."
+              aria-label="Posjetite web stranicu Pine Studio."
               className="cursor-pointer hover:bg-blue"
             >
               <Image
@@ -123,27 +125,28 @@ const Partners1 = () => {
                 className="aspect-[2/1] h-24 w-24 object-contain sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36"
                 height="60"
                 width="120"
-                src="/static/images/partners/outfit7.png"
+                src="/static/images/partners/pine-studio.png"
               />
             </a>
           </div>
+
           <div className="flex items-center justify-center">
             <a
-              href="https://outfit7.com/"
+              href="https://www.redbull.com/hr-hr/"
               target="_blank"
               rel="noreferrer noopener"
-              aria-label="Posjetite web stranicu Outift7."
+              aria-label="Posjetite web stranicu Red Bull-a."
               className="cursor-pointer hover:bg-blue"
             >
               <Image
-                alt="Outfit7 Logo"
+                alt="Red Bull Logo"
                 className="aspect-[2/1] h-24 w-24 object-contain sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36"
                 height="60"
                 width="120"
-                src="/static/images/partners/outfit7.png"
+                src="/static/images/partners/red-bull.png"
               />
             </a>
-          </div> */}
+          </div>
         </div>
       </div>
     </StepContainer>
