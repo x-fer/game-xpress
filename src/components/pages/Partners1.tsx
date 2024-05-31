@@ -6,7 +6,7 @@ const Partners1 = () => {
     <StepContainer className="bg-white">
       <div className="flex h-full w-full flex-col p-6 sm:p-8 md:p-10 lg:p-12">
         <h2 className="text-5xl font-bold text-black md:text-6xl lg:text-7xl">Partneri</h2>
-        <div className=" mb-10 grid  w-full flex-1 grid-cols-2 gap-8 px-4 sm:grid-cols-3 md:grid-cols-4 md:px-6 lg:px-8">
+        <div className="mb-14 grid  w-full flex-1 grid-cols-2 gap-8 px-4 sm:grid-cols-3 md:grid-cols-4 md:px-6 lg:px-8">
           <div className="flex items-center justify-center">
             <a
               href="https://www.fer.unizg.hr/"
