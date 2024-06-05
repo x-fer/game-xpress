@@ -29,7 +29,7 @@ export default function Home() {
         <Step7 />
         <Step8 />
       </div>
-      <ButtonSignUp scale={scale} display={display} />
+      {/* <ButtonSignUp scale={scale} display={display} /> */}
     </main>
   )
 }
