@@ -1,0 +1,150 @@
+@import 'tailwindcss';
+
+@variant dark (&:is(.dark *));
+
+@theme {
+	--color-section: #ffffff;
+	--color-section-weak: #cacaca;
+	--color-background: #e0e0e0;
+
+	--color-neutral: #000000;
+	--color-neutral-strong: #747474;
+	--color-neutral-medium: #adadad;
+	--color-neutral-weak: #00000010;
+	--color-neutral-contrast: #ffffff;
+
+	--color-accent: #e40100;
+	--color-accent-strong: #ec4d4d;
+	--color-accent-medium: #f7b3b2;
+	--color-accent-weak: #fce6e5;
+	--color-accent-contrast: #000000;
+
+	--color-info: #3478df;
+	--color-info-strong: #71a0e7;
+	--color-info-medium: #c2d6f2;
+	--color-info-weak: #ebf1f7;
+	--color-info-contrast: #ffffff;
+
+	--color-success: #359a73;
+	--color-success-strong: #72b89b;
+	--color-success-medium: #c2e0d1;
+	--color-success-weak: #ebf4ec;
+	--color-success-contrast: #ffffff;
+
+	--color-warning: #df9b34;
+	--color-warning-strong: #e9b96f;
+	--color-warning-medium: #f5e0bf;
+	--color-warning-weak: #fcf4e6;
+	--color-warning-contrast: #ffffff;
+
+	--color-danger: #df3434;
+	--color-danger-strong: #e9716f;
+	--color-danger-medium: #f5c1bf;
+	--color-danger-weak: #fceae6;
+	--color-danger-contrast: #ffffff;
+
+	--color-shad: rgba(from var(--color-section) r g b / 0.8);
+
+	--color-bsod: #1436e3;
+}
+
+@layer base {
+	.dark {
+		--color-section: #121110;
+		--color-background: #000000;
+		--color-foreground: #080808c0;
+		--color-overlay: #000000c0;
+
+		--color-neutral: #ffffff;
+		--color-neutral-strong: #89898b;
+		--color-neutral-medium: #434346;
+		--color-neutral-weak: #1b1b1f;
+		--color-neutral-contrast: #000000;
+
+		--color-accent: #e40100;
+		--color-accent-strong: #a50606;
+		--color-accent-medium: #520e0d;
+		--color-accent-weak: #281111;
+		--color-accent-contrast: #000000;
+
+		--color-info: #3478df;
+		--color-info-strong: #24467c;
+		--color-info-medium: #1a2840;
+		--color-info-weak: #171c28;
+		--color-info-contrast: #ffffff;
+
+		--color-success: #359a73;
+		--color-success-strong: #255746;
+		--color-success-medium: #1b2f2a;
+		--color-success-weak: #171f1f;
+		--color-success-contrast: #ffffff;
+
+		--color-warning: #df9b34;
+		--color-warning-strong: #7a5726;
+		--color-warning-medium: #3d2f1e;
+		--color-warning-weak: #241f1a;
+		--color-warning-contrast: #ffffff;
+
+		--color-danger: #df3434;
+		--color-danger-strong: #7a2426;
+		--color-danger-medium: #3d1a1e;
+		--color-danger-weak: #24171a;
+		--color-danger-contrast: #ffffff;
+	}
+}
+
+@theme inline {
+	--color-theme: var(--map-theme);
+	--color-theme-strong: var(--map-theme-strong);
+	--color-theme-medium: var(--map-theme-medium);
+	--color-theme-weak: var(--map-theme-weak);
+	--color-theme-contrast: var(--map-theme-contrast);
+}
+
+.theme-neutral {
+	--map-theme: var(--color-neutral);
+	--map-theme-strong: var(--color-neutral-strong);
+	--map-theme-medium: var(--color-neutral-medium);
+	--map-theme-weak: var(--color-neutral-weak);
+	--map-theme-contrast: var(--color-neutral-contrast);
+}
+
+.theme-accent {
+	--map-theme: var(--color-accent);
+	--map-theme-strong: var(--color-accent-strong);
+	--map-theme-medium: var(--color-accent-medium);
+	--map-theme-weak: var(--color-accent-weak);
+	--map-theme-contrast: var(--color-accent-contrast);
+}
+
+.theme-danger {
+	--map-theme: var(--color-danger);
+	--map-theme-strong: var(--color-danger-strong);
+	--map-theme-medium: var(--color-danger-medium);
+	--map-theme-weak: var(--color-danger-weak);
+	--map-theme-contrast: var(--color-danger-contrast);
+}
+
+.theme-info {
+	--map-theme: var(--color-info);
+	--map-theme-strong: var(--color-info-strong);
+	--map-theme-medium: var(--color-info-medium);
+	--map-theme-weak: var(--color-info-weak);
+	--map-theme-contrast: var(--color-info-contrast);
+}
+
+.theme-warning {
+	--map-theme: var(--color-warning);
+	--map-theme-strong: var(--color-warning-strong);
+	--map-theme-medium: var(--color-warning-medium);
+	--map-theme-weak: var(--color-warning-weak);
+	--map-theme-contrast: var(--color-warning-contrast);
+}
+
+.theme-success {
+	--map-theme: var(--color-success);
+	--map-theme-strong: var(--color-success-strong);
+	--map-theme-medium: var(--color-success-medium);
+	--map-theme-weak: var(--color-success-weak);
+	--map-theme-contrast: var(--color-success-contrast);
+}

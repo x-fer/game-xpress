@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+/* Note: Gilroy font needs to be added separately as it's not available on Google Fonts */
+
+@import 'tailwindcss';
+@layer base;
+@layer components;
+@layer utilities;
+
+@plugin "tailwindcss-displaymodes";
+
+@import './typography.css';
+@import './colors.css';
+@import './tiptap.css';
+@import './animate.css';
+@import './retro.css';
+
+@theme {
+	--breakpoint-xs: 400px;
+	--breakpoint-sm: 640px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1024px;
+	--breakpoint-xl: 1280px;
+}
+
+@theme {
+	@keyframes push-fade-right {
+		from {
+			opacity: 0;
+			transform: translateX(-10px);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	@keyframes accordion-down {
+		from {
+			height: 0;
+		}
+		to {
+			height: var(--radix-accordion-content-height);
+		}
+	}
+
+	@keyframes accordion-up {
+		from {
+			height: var(--radix-accordion-content-height);
+		}
+		to {
+			height: 0;
+		}
+	}
+
+	--animate-accordion-down: accordion-down 0.2s ease-out;
+	--animate-accordion-up: accordion-up 0.2s ease-out;
+	--animate-push-fade-right: push-fade-right 0.5s ease-out;
+}
+
+/* Clickable elements */
+@utility clickable {
+	@apply cursor-pointer duration-300 hover:duration-200 sm:hover:translate-y-[-2px] sm:active:translate-y-[1px];
+}
+
+/* Scrollbar styles */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: hsl(var(--color-neutral)) hsl(var(--color-section));
+}
+
+/* Webkit scrollbar styles */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: hsl(var(--color-section));
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: hsl(var(--color-neutral));
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: hsl(var(--color-neutral) / 0.8);
+}
+
+.scrollbar-hidden {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+	display: none;
+}
+
+/* Container */
+
+@theme {
+	--container-xs: 400px;
+	--container-sm: 640px;
+	--container-md: 768px;
+	--container-lg: 1024px;
+	--container-xl: 1280px;
+}
+
+@utility container-fluid {
+	@apply @container max-w-full w-full relative;
+}
+
+@utility container-xs {
+	@apply @container max-w-[var(--container-xs)] w-full relative;
+}
+
+@utility container-sm {
+	@apply @container max-w-[var(--container-sm)] w-full relative;
+}
+
+@utility container-md {
+	@apply @container max-w-[var(--container-md)] w-full relative;
+}
+
+@utility container-lg {
+	@apply @container max-w-[var(--container-lg)] w-full relative;
+}
+
+@utility container-xl {
+	@apply @container max-w-[var(--container-xl)] w-full relative;
+}
+
+@utility pad-sm {
+	@apply px-2 @md:px-0;
+}
+
+@utility pad-md {
+	@apply px-3 @md:px-0;
+}
+
+@utility pad-lg {
+	@apply px-4 @md:px-0;
+}
+
+@utility pad-xl {
+	@apply px-6 @md:px-0;
+}
+
+@utility flex-page {
+	@apply flex flex-col w-full items-center;
+}
+
+@utility dottet-gradient-pre {
+	background-size: 2px 2px;
+	mask: linear-gradient(rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+@utility dotted-gradient {
+	backdrop-filter: blur(4px);
+	background-color: rgba(from var(--color-background) r g b / 0.6);
+	background-image: radial-gradient(
+		transparent 1px,
+		var(--color-background) 1px
+	);
+}

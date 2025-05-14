@@ -1,0 +1,134 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["relationJoins"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ------------------
+
+model User {
+  id String @id @default(cuid())
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  email    String @unique
+  password String
+}
+
+// ------------------
+
+model Event {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  title       String
+  description String
+  date        DateTime
+  location    String
+  capacity    Int      @default(10)
+  price       Int      @default(0)
+
+  CoverImage EventCover?
+  Gallery    EventGallery?
+
+  externalReservationUrl String?
+
+  Reservations Reservation[]
+}
+
+model EventCover {
+  eventId String @id @unique
+  Event   Event  @relation(fields: [eventId], references: [id])
+
+  imageId String?
+  Image   File?   @relation(fields: [imageId], references: [id])
+}
+
+model EventGallery {
+  eventId String @id @unique
+  event   Event  @relation(fields: [eventId], references: [id])
+
+  Images File[]
+}
+
+// ------------------
+
+model File {
+  id          String @id @default(cuid())
+  key         String
+  contentType String
+  size        Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  EventCover   EventCover[]
+  EventGallery EventGallery[]
+}
+
+// ------------------
+
+model Reservation {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+
+  email    String
+  quantity Int
+
+  eventId String
+  Event   Event  @relation(fields: [eventId], references: [id])
+
+  totalPrice Int // cents
+
+  reservationStatus ReservationStatus @default(PENDING)
+  paymentStatus     PaymentStatus     @default(NOT_PAID)
+
+  paymentIntentId String?
+
+  couponId String?
+  Coupon   Coupon? @relation(fields: [couponId], references: [id])
+}
+
+enum ReservationStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+}
+
+enum PaymentStatus {
+  NOT_PAID
+  PAID
+  REFUNDED
+}
+
+model Coupon {
+  id String @id @default(cuid())
+
+  code           String
+  creatorByEmail String?
+
+  createdAt DateTime  @default(now())
+  expiresAt DateTime?
+
+  discountPercent Int?
+  discountAmount  Int?
+
+  maxUses Int @default(1)
+
+  Reservations Reservation[]
+}
+
+// ------------------
+
+model Newsletter {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+
+  email String @unique
+}

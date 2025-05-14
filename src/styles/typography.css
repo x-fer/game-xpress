@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-display: 'Gilroy', sans-serif;
+}
+
+/* Base styles */
+@theme {
+	--font-nunito: 'Nunito Sans', sans-serif;
+	--font-gilroy: 'Gilroy', sans-serif;
+}
+
+/* Display */
+@utility display-1 {
+	@apply font-gilroy text-[48px] font-extrabold leading-[48px] sm:text-[64px] sm:leading-[64px];
+}
+@utility display-2 {
+	@apply font-gilroy text-[32px] font-extrabold leading-[32px] sm:text-[48px] sm:leading-[48px];
+}
+@utility display-3 {
+	@apply font-gilroy text-[28px] font-extrabold leading-[28px] sm:text-[32px] sm:leading-[32px];
+}
+
+/* Title */
+@utility title-1 {
+	@apply font-nunito text-[18px] font-extrabold leading-[24px] tracking-[-0.54px] sm:text-[22px] sm:leading-[24px] sm:tracking-[-0.66px];
+}
+@utility title-2 {
+	@apply font-nunito text-[16px] font-extrabold leading-[24px] tracking-[-0.48px] sm:text-[18px] sm:leading-[24px] sm:tracking-[-0.54px];
+}
+@utility title-3 {
+	@apply font-nunito text-[15px] font-extrabold leading-[20px] tracking-[-0.45px] sm:text-[14px] sm:leading-[20px] sm:tracking-[-0.42px];
+}
+
+/* Body */
+@utility body-1 {
+	@apply font-nunito text-[16px] font-normal leading-[24px] sm:text-[18px] sm:leading-[24px];
+}
+@utility body-2 {
+	@apply font-nunito text-[13px] font-normal leading-[20px] sm:text-[14px] sm:leading-[20px];
+}
+@utility body-3 {
+	@apply font-nunito text-[11px] font-normal leading-[16px] sm:text-[12px] sm:leading-[16px];
+}
+
+/* Caption */
+@utility caption {
+	@apply font-nunito text-[11px] font-extrabold leading-[16px];
+}
+
+/* Overline */
+@utility overline {
+	text-decoration: none !important;
+	@apply font-nunito text-[8px] font-black leading-[8px] tracking-[0.4px] uppercase;
+}
+
+/* Input */
+@utility input {
+	@apply font-nunito text-[16px] font-normal leading-[24px] h-[24px] sm:text-[14px] sm:leading-[24px] sm:h-[24px];
+}
+
+/* Buttons */
+@utility button-lg {
+	@apply font-nunito text-[18px] font-bold leading-[24px];
+}
+@utility button-md {
+	@apply font-nunito text-[12px] font-bold leading-[16px] sm:text-[13px] sm:leading-[16px];
+}
+@utility button-sm {
+	@apply font-nunito text-[11px] font-bold leading-[16px];
+}

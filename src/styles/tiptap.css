@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* TipTap */
+.tiptap .element-code {
+	@apply inline-block bg-neutral-weak p-1 px-2 rounded-md font-mono text-[13px] font-normal leading-[20px] sm:text-[14px] sm:leading-[20px];
+}
+
+.tiptap .element-paragraph {
+	@apply body-2;
+}
+
+.tiptap .element-link {
+	@apply text-accent underline;
+}
+
+ul {
+	@apply list-disc list-inside;
+}
+
+ol {
+	@apply list-decimal list-inside;
+}
+
+li {
+	@apply mb-2 body-2;
+}

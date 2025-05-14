@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@utility backdrop-retro {
+	border: 2px solid #000;
+	box-shadow:
+		2px 2px 0px 0px var(--color-section-weak),
+		8px 8px 0px 0px #000;
+}
+
+@utility backdrop-retro-light {
+	border: 2px solid var(--color-section-weak);
+	box-shadow:
+		2px 2px 0px 0px var(--color-section-weak),
+		8px 8px 0px 0px #000;
+}
+
+.marquee {
+	animation: marquee 8s linear infinite;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(calc(-100% - 40px));
+	}
+}
