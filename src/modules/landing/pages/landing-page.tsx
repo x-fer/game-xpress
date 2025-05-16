@@ -7,15 +7,15 @@ const FloatingWindow: FC<PropsWithChildren> = ({ children }) => {
 
 const BannerArea = () => {
 	return (
-		<div className="fixed backdrop-retro bg-bsod text-white py-6">
+		<header className="fixed backdrop-retro bg-bsod text-white py-6 w-full">
 			<Marquee>
-				{new Array(20).fill(0).map((_, index) => (
-					<div className="text-center inline-block mr-6" key={index}>
+				{new Array(40).fill(0).map((_, index) => (
+					<p className="text-center inline-block mr-6" key={index}>
 						Prijave otvorene
-					</div>
+					</p>
 				))}
 			</Marquee>
-		</div>
+		</header>
 	);
 };
 
@@ -158,9 +158,9 @@ const FooterSection = () => {
 
 export const LandingPage = () => {
 	return (
-		<div className="flex flex-col gap-6 p-6 md:p-12 lg:p-20">
+		<div className="flex flex-col gap-6 p-2 md:p-4 lg:p-8 w-full h-full">
 			<BannerArea />
-			<div className="flex flex-col w-full md:flex-row gap-6">
+			{/* <div className="flex flex-col w-full md:flex-row gap-6">
 				<div className="fixed flex flex-col gap-6 shrink-0 md:w-[568px] md:max-w-1/3 grow-1">
 					<ConsoleArea />
 					<NavigationArea />
@@ -171,7 +171,7 @@ export const LandingPage = () => {
 					<AboutSection />
 					<FooterSection />
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

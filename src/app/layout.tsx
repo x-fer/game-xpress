@@ -1,22 +1,28 @@
 import '@/styles/index.css';
 
-import { GeistSans } from 'geist/font/sans';
 import { type Metadata } from 'next';
 import { Toaster } from 'sonner';
 
-import { cn } from '@/deps/shadcn/utils';
 import { ViewportSizeProvider } from '@/utils/use-viewport';
+import localFont from 'next/font/local';
+
+const pixelFont = localFont({
+	src: '../../public/fonts/PerfectDOSVGA437.ttf',
+	display: 'swap'
+});
 
 export const metadata: Metadata = {
-	title: 'X.Press - Game Jam',
-	description: 'Games X.Press - Game Jam',
+	title: 'Game X.Press',
+	description:
+		'Game jam by X.FER | May 31-June 1 (24h) @ Algebra (Gradišćanska 24) | Any genre, style or technology allowed | Anyone 18+ can compete (students prioritized)',
 	icons: [{ rel: 'icon', url: '/favicon.png' }],
 	openGraph: {
-		title: 'Games X.Press - Game Jam',
-		description: 'Games X.Press - Game Jam',
+		title: 'Game X.Press',
+		description:
+			'Game jam by X.FER | May 31-June 1 (24h) @ Algebra (Gradišćanska 24) | Any genre, style or technology allowed | Anyone 18+ can compete (students prioritized)',
 		url: 'https://game-xpress.xfer.hr/',
 		type: 'website',
-		siteName: 'gamesx.press',
+		siteName: 'game-xpress.xfer.hr',
 		images: [
 			{
 				url: 'https://game-xpress.xfer.hr/cover.png',
@@ -32,7 +38,7 @@ export default function RootLayout({
 	children
 }: Readonly<{ children: React.ReactNode }>) {
 	return (
-		<html lang="en" className={cn(GeistSans.variable, 'bg-background')}>
+		<html lang="en" className={`bg-background ${pixelFont.className}`}>
 			<ViewportSizeProvider>
 				<body className="min-h-screen">
 					{children}
