@@ -1,0 +1,53 @@
+{
+	"name": "Game X.Press",
+	"short_name": "GameXPress",
+	"description": "Game jam by X.FER | May 31-June 1 (24h) @ Algebra (Gradišćanska 24) | Any genre, style or technology allowed | Anyone 18+ can compete (students prioritized)",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#000000",
+	"theme_color": "#e40100",
+	"categories": ["games", "education", "development"],
+	"lang": "en",
+	"dir": "ltr",
+	"orientation": "any",
+	"icons": [
+		{
+			"src": "/assets/logo.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/assets/logo.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	],
+	"screenshots": [
+		{
+			"src": "/assets/cover.png",
+			"sizes": "1200x630",
+			"type": "image/png",
+			"platform": "wide",
+			"label": "Game X.Press Cover Image"
+		}
+	],
+	"shortcuts": [
+		{
+			"name": "Register",
+			"url": "/register",
+			"description": "Register for Game X.Press"
+		},
+		{
+			"name": "Ordinance",
+			"url": "/ordinance",
+			"description": "Read the full ordinance document"
+		},
+		{
+			"name": "Grading Criteria",
+			"url": "/grading-criteria",
+			"description": "View detailed grading criteria"
+		}
+	]
+}

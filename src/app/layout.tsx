@@ -15,6 +15,28 @@ export const metadata: Metadata = {
 	title: 'Game X.Press',
 	description:
 		'Game jam by X.FER | May 31-June 1 (24h) @ Algebra (Gradišćanska 24) | Any genre, style or technology allowed | Anyone 18+ can compete (students prioritized)',
+	metadataBase: new URL('https://game-xpress.xfer.hr'),
+	keywords: [
+		'game jam',
+		'game development',
+		'X.FER',
+		'hackathon',
+		'game competition',
+		'student competition',
+		'Zagreb',
+		'Algebra',
+		'Croatia',
+		'gaming',
+		'game design'
+	],
+	authors: [{ name: 'X.FER' }],
+	creator: 'X.FER',
+	publisher: 'X.FER',
+	formatDetection: {
+		email: false,
+		address: false,
+		telephone: false
+	},
 	icons: [
 		{ rel: 'icon', url: '/assets/logo.png', sizes: '32x32' },
 		{ rel: 'icon', url: '/assets/logo.png', sizes: '16x16' },
@@ -53,6 +75,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang="en" className={`bg-background ${pixelFont.className}`}>
+			<head>
+				<link rel="manifest" href="/manifest.json" />
+				<meta name="theme-color" content="#e40100" />
+			</head>
 			<body className="min-h-screen">{children}</body>
 		</html>
 	);
