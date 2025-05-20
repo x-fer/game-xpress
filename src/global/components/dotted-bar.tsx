@@ -1,42 +1,41 @@
+import React from 'react';
+
 type DottedBarProps = {
 	rows?: number;
 	dotSize?: number;
 	gap?: number;
+	children?: React.ReactNode;
 };
 
 export const DottedBar = ({
 	rows = 3,
-	dotSize = 0.75,
-	gap = 1.5
+	dotSize = 2,
+	gap = 2,
+	children
 }: DottedBarProps) => {
-	const verticalSpacing = dotSize + gap;
-	const dotsPerRow = Math.floor(100 / (dotSize + gap));
-	const totalWidth = dotsPerRow * (dotSize + gap) - gap; // Total width of all dots + gaps
-	const leftPadding = (100 - totalWidth) / 2; // Calculate padding to center
-	const totalHeight = rows * verticalSpacing - gap;
+	const patternSize = dotSize + gap;
+	const height = rows * patternSize - gap; // Subtract one gap to avoid extra space at bottom
 
 	return (
-		<div className="w-full overflow-hidden flex-1 flex justify-center">
-			<svg
-				viewBox={`0 0 100 ${totalHeight}`}
-				preserveAspectRatio="xMidYMid meet"
-				width="100%"
-				height="100%"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				{Array.from({ length: rows }).map((_, row) =>
-					Array.from({ length: dotsPerRow }).map((_, col) => (
-						<rect
-							key={`${row}-${col}`}
-							x={leftPadding + col * (dotSize + gap)}
-							y={row * verticalSpacing}
-							width={dotSize}
-							height={dotSize}
-							fill="white"
-						/>
-					))
-				)}
+		<div className="flex-1 flex items-center relative">
+			<svg className="w-full" height={height}>
+				<defs>
+					<pattern
+						id="dotPattern"
+						width={patternSize}
+						height={patternSize}
+						patternUnits="userSpaceOnUse"
+					>
+						<rect width={dotSize} height={dotSize} fill="white" />
+					</pattern>
+				</defs>
+				<rect width="100%" height="100%" fill="url(#dotPattern)" />
 			</svg>
+			{children && (
+				<div className="absolute left-1/2 transform -translate-x-1/2">
+					{children}
+				</div>
+			)}
 		</div>
 	);
 };
