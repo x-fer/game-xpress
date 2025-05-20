@@ -2,7 +2,6 @@
 
 import { HeaderBanner } from '@/global/components/header-banner';
 import { AboutSection } from '@/global/components/about-section';
-import { NavigationArea } from '@/global/components/navigation-area';
 import { ConsoleArea } from '@/global/components/console-area';
 import { useState } from 'react';
 
@@ -11,16 +10,15 @@ export const LandingPage = () => {
 	const totalPages = 5;
 
 	return (
-		<div className="flex flex-col w-full min-h-screen p-1 md:p-3 lg:p-5">
+		<div className="flex flex-col w-full h-screen p-1 md:p-3 lg:p-5 gap-6">
 			<HeaderBanner />
-			<div className="flex flex-1 w-full gap-6 ">
-				{/* Left column */}
-				<div className="flex flex-col gap-6 w-full md:w-[350px] max-w-full md:max-w-[350px]">
+			<div className="flex flex-1 w-full gap-6 h-[calc(100vh-120px)]">
+				{/* Left column - Console */}
+				<div className="flex flex-col gap-6 w-full md:w-[350px] max-w-full md:max-w-[350px] h-full">
 					<ConsoleArea />
-					<NavigationArea currentPage={currentPage} />
 				</div>
-				{/* Right column (Wizard) */}
-				<div className="flex-1 flex flex-col gap-6 overflow-y-auto">
+				{/* Right column - Wizard */}
+				<div className="flex-1 flex flex-col gap-6 overflow-y-auto h-full">
 					<div className="flex flex-row justify-between items-center mb-4">
 						<button
 							disabled={currentPage === 0}
@@ -42,11 +40,12 @@ export const LandingPage = () => {
 							Next
 						</button>
 					</div>
-					{/* Wizard pages (AboutSection as placeholder) */}
+					{/* Wizard pages */}
 					{Array.from({ length: totalPages }).map((_, idx) => (
 						<div
 							key={idx}
 							style={{ display: idx === currentPage ? 'block' : 'none' }}
+							className="h-full"
 						>
 							<AboutSection />
 						</div>
