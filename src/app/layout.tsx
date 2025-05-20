@@ -3,7 +3,6 @@ import '@/styles/index.css';
 import { type Metadata } from 'next';
 import { Toaster } from 'sonner';
 
-import { ViewportSizeProvider } from '@/utils/use-viewport';
 import localFont from 'next/font/local';
 
 const pixelFont = localFont({
@@ -39,12 +38,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang="en" className={`bg-background ${pixelFont.className}`}>
-			<ViewportSizeProvider>
-				<body className="min-h-screen">
-					{children}
-					<Toaster />
-				</body>
-			</ViewportSizeProvider>
+			<body className="min-h-screen">
+				{children}
+				<Toaster />
+			</body>
 		</html>
 	);
 }

@@ -1,4 +1,4 @@
-import { cn } from '@/deps/shadcn/utils';
+import { cn } from '@/deps/utils';
 import { createContext, FC, HTMLAttributes, useContext, useState } from 'react';
 
 export const wizardContext = createContext<{
