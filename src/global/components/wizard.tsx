@@ -21,28 +21,36 @@ const WizardProvider: FC<{
 	return (
 		<wizardContext.Provider value={{ currentStep, setCurrentStep, totalSteps }}>
 			<div className="flex flex-col gap-4 w-full">
-				<div className="flex flex-row justify-between items-center w-full">
-					<button
-						onClick={() => {
-							const prevStep = Math.max(1, currentStep - 1);
-							setCurrentStep(prevStep);
-						}}
-						className="px-4 py-2 bg-black text-white rounded disabled:opacity-50"
-					>
-						Previous
-					</button>
-					<span className="text-lg font-bold">
+				<div className="flex flex-row justify-between items-center w-full relative">
+					<div className="w-[100px]">
+						{currentStep > 1 && (
+							<button
+								onClick={() => {
+									const prevStep = Math.max(1, currentStep - 1);
+									setCurrentStep(prevStep);
+								}}
+								className="cursor-pointer px-4 py-2 backdrop-retro bg-black text-white disabled:opacity-50"
+							>
+								PREVIOUS
+							</button>
+						)}
+					</div>
+					<span className="text-lg font-bold absolute left-1/2 -translate-x-1/2">
 						Step {currentStep} of {totalSteps}
 					</span>
-					<button
-						onClick={() => {
-							const nextStep = Math.min(totalSteps, currentStep + 1);
-							setCurrentStep(nextStep);
-						}}
-						className="px-4 py-2 bg-black text-white rounded disabled:opacity-50"
-					>
-						Next
-					</button>
+					<div className="w-[100px] flex justify-end">
+						{currentStep < totalSteps && (
+							<button
+								onClick={() => {
+									const nextStep = Math.min(totalSteps, currentStep + 1);
+									setCurrentStep(nextStep);
+								}}
+								className="cursor-pointer px-4 py-2 bg-black backdrop-retro text-white disabled:opacity-50"
+							>
+								NEXT
+							</button>
+						)}
+					</div>
 				</div>
 				{children}
 			</div>

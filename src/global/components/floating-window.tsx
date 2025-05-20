@@ -15,57 +15,138 @@ const FloatingWindow = ({ children }: PropsWithChildren) => {
 	];
 
 	const stepContent = {
-		1: `
-- Each team can have **1–4 members**.
-- All participants must be **18+** at the time of the event.
-- **Students are prioritized** in case of over-registration.
-- Teams must be fixed once the Game Jam starts — no adding or swapping members.`,
+		1: (
+			<>
+				<p>
+					Each team can consist of 1 to 4 members. All participants must be at
+					least 18 years old at the time of the event.
+				</p>
 
-		2: `
-- The theme will be **secret** until the event starts.
-- You must implement the theme in a meaningful way:
-  - **Tier 1 (5%)**: Theme is only visual/flavor.
-  - **Tier 2 (10%)**: Theme affects mechanics or objectives.
-  - **Tier 3 (15%)**: Theme is deeply embedded in core systems.
-- **Games that ignore the theme are disqualified**.`,
+				<p>
+					Every participant can only be part of one team. Once the GameJam
+					begins, no team changes are allowed.
+				</p>
 
-		3: `
-Games are scored on the following criteria (out of 100 points):
+				<p>
+					If there are too many applicants, teams with currently enrolled
+					bachelor's or master's students may be prioritized. Proof of identity
+					and student status may be requested.
+				</p>
 
-- **Gameplay & design** – 25%
-- **Graphics & visual design** – 20%
-- **Technical quality** – 15%
-- **Theme implementation** – 15%
-- **Onboarding & documentation** – 10%
-- **Pitch (3-minute presentation)** – 10%
-- **Deployment to itch.io** – 5%
+				<p>
+					Team members must not include organizers or members of the X.FER
+					association presidency. If a participant has a professional,
+					mentoring, or family connection with a jury member, this must be
+					reported in advance.
+				</p>
+			</>
+		),
+		2: (
+			<>
+				<p>
+					The theme of the GameJam is kept secret until the start of the event.
+					It will be announced at the opening on May 31 at 9:00, held at Algebra
+					Campus (Gradišćanska ul. 24).
+				</p>
 
-Final score = **60% jury** + **40% peer review**. Bonus points are added afterward.`,
+				<p>Each team must create a game that clearly reflects the theme.</p>
 
-		4: `
-- **1st Place**: $1000
-- **2nd Place**: $500
-- **3rd Place**: $250
+				<p>
+					The degree of theme integration is evaluated using a tiered system:
+				</p>
+				<ul className="list-disc pl-6 space-y-1">
+					<li>
+						Tier 1 (5%): Theme appears only visually or in the background.
+					</li>
+					<li>
+						Tier 2 (10%): Theme influences gameplay, mechanics, or objectives.
+					</li>
+					<li>
+						Tier 3 (15%): Theme is deeply embedded in the core game systems and
+						design.
+					</li>
+				</ul>
 
-Bonus points:
-- **+5 points** for optional challenges like:
-  - Easter egg hunt
-  - Achievement system
-  - Secret dev room
-  - Accessibility features
+				<p>
+					Games that do not implement the theme at all will receive 0 points in
+					this category and be disqualified from the competition.
+				</p>
+			</>
+		),
+		3: (
+			<>
+				<p>
+					Games are evaluated based on multiple criteria by both peers and a
+					professional jury. The final score is calculated as 60% jury
+					evaluation and 40% peer review. Scores are then adjusted with any
+					bonus points earned.
+				</p>
 
-- **+5 points each** for best in:
-  - Audio
-  - Graphics
-  - Overall game`,
+				<p>The main categories are:</p>
+				<ul className="list-disc pl-6 space-y-1">
+					<li>Gameplay and game design (25%)</li>
+					<li>Graphics and visual design (20%)</li>
+					<li>Playability and technical quality (15%)</li>
+					<li>Theme implementation (15%)</li>
+					<li>Onboarding and documentation (10%)</li>
+					<li>Game pitch (10%)</li>
+					<li>Deployment to itch.io (5%)</li>
+				</ul>
 
-		5: `
-- Registration opens **May 19** and closes **May 29 at 23:59**.
-- Submit your **team details and project concept** via the official form.
-- In case of overbooking, priority is given to students in STEM fields or with relevant experience.
-- You may be asked to prove student status.
+				<p>
+					The pitch must be up to 3 minutes long and presented by all team
+					members.
+				</p>
+			</>
+		),
+		4: (
+			<>
+				<p>Teams can earn up to 20 bonus points.</p>
 
-No registration fee is required.`
+				<p>
+					You can get up to +5 bonus points for including one of the following
+					features:
+				</p>
+				<ul className="list-disc pl-6 space-y-1">
+					<li>A hidden easter egg hunt</li>
+					<li>A functional achievement system</li>
+					<li>A secret developer room or creative fourth-wall break</li>
+					<li>
+						An accessibility mode (e.g., colorblind toggle, simplified controls)
+					</li>
+				</ul>
+
+				<p>An additional +5 points each are awarded to the best games in:</p>
+				<ul className="list-disc pl-6 space-y-1">
+					<li>Audio</li>
+					<li>Graphics</li>
+					<li>Overall game</li>
+				</ul>
+
+				<p>Only one optional design challenge bonus can be counted per team.</p>
+			</>
+		),
+		5: (
+			<>
+				<p>
+					Applications open on May 19 and close on May 29 at 23:59. All teams
+					must register using the official form provided on the organizer's
+					website.
+				</p>
+
+				<p>
+					Each team must assign a representative for all official communication.
+					Applications may close early if the maximum number of teams is
+					reached.
+				</p>
+
+				<p>
+					There is no registration fee. The selection process may take into
+					account your field and year of study, experience in relevant
+					competitions, game-related projects, or industry work.
+				</p>
+			</>
+		)
 	};
 
 	return (
@@ -77,18 +158,8 @@ No registration fee is required.`
 				</span>
 				<DottedBar />
 			</div>
-			<div className="p-6">
-				<ReactMarkdown
-					components={{
-						div: ({ children }) => (
-							<div className="prose prose-invert prose-headings:mb-4 prose-headings:mt-0 prose-p:mt-4 prose-p:mb-4 prose-ul:mt-2 prose-li:mt-0 prose-li:mb-1 max-w-none font-sans">
-								{children}
-							</div>
-						)
-					}}
-				>
-					{stepContent[currentStep as keyof typeof stepContent]}
-				</ReactMarkdown>
+			<div className="p-6 space-y-4 font-mono text-sm">
+				{stepContent[currentStep as keyof typeof stepContent]}
 			</div>
 		</div>
 	);
