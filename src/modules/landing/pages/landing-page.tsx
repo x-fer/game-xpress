@@ -9,15 +9,18 @@ export const LandingPage = () => {
 	const totalSteps = 5;
 
 	return (
-		<div className="flex flex-col w-full h-screen p-1 md:p-3 lg:p-5 gap-6 overflow-hidden">
+		<div className="flex flex-col w-full min-h-screen p-1 md:p-3 lg:p-5 gap-6">
 			<HeaderBanner />
-			<div className="flex flex-1 w-full gap-6 h-[calc(100vh-120px)]">
-				{/* Left column - Console */}
-				<div className="flex flex-col gap-6 w-full md:w-[350px] max-w-full md:max-w-[350px] h-full">
+			<div className="flex flex-col md:flex-row flex-1 w-full gap-6">
+				{/* Console */}
+				<div className="flex flex-col gap-6 w-full h-[60vh] md:h-[calc(100vh-120px)] md:w-[350px] lg:w-[500px] xl:w-[600px]">
 					<ConsoleArea />
 				</div>
-				{/* Right column - Wizard */}
-				<Wizard totalSteps={totalSteps} className="w-full">
+				{/* Wizard */}
+				<Wizard
+					totalSteps={totalSteps}
+					className="w-full flex-1 md:h-[calc(100vh-120px)]"
+				>
 					<FloatingWindow />
 				</Wizard>
 			</div>

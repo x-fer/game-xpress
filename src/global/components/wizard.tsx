@@ -20,8 +20,8 @@ const WizardProvider: FC<{
 
 	return (
 		<wizardContext.Provider value={{ currentStep, setCurrentStep, totalSteps }}>
-			<div className="flex flex-col gap-6 w-full">
-				<div className="flex flex-row justify-between items-center mb-4 w-full">
+			<div className="flex flex-col gap-4 w-full">
+				<div className="flex flex-row justify-between items-center w-full">
 					<button
 						onClick={() => {
 							const prevStep = Math.max(1, currentStep - 1);

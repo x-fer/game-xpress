@@ -126,7 +126,7 @@ export const ConsoleArea = () => {
 		);
 
 	return (
-		<div className="backdrop-retro-light h-full max-h-full bg-black text-white py-6 flex flex-col gap-6 overflow-hidden">
+		<div className="backdrop-retro-light h-full max-h-full bg-black text-white py-6 flex flex-col gap-6 overflow-hidden ">
 			<Marquee className="shrink-0">
 				<img
 					src="/assets/illustrations/xpress.svg"

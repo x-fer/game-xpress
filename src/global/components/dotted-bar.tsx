@@ -14,7 +14,7 @@ export const DottedBar = ({
 	children
 }: DottedBarProps) => {
 	const patternSize = dotSize + gap;
-	const height = rows * patternSize - gap; // Subtract one gap to avoid extra space at bottom
+	const height = rows * patternSize - gap;
 
 	return (
 		<div className="flex-1 flex items-center relative">
