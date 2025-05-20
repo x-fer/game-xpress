@@ -1,177 +1,58 @@
-import { FC, PropsWithChildren } from 'react';
-import Marquee from 'react-fast-marquee';
+'use client';
 
-const FloatingWindow: FC<PropsWithChildren> = ({ children }) => {
-	return <div className="backdrop-retro bg-section w-[800px]">{children}</div>;
-};
-
-const BannerArea = () => {
-	return (
-		<header className="fixed backdrop-retro bg-bsod text-white py-6 w-full">
-			<Marquee>
-				{new Array(40).fill(0).map((_, index) => (
-					<p className="text-center inline-block mr-6" key={index}>
-						Prijave otvorene
-					</p>
-				))}
-			</Marquee>
-		</header>
-	);
-};
-
-const ConsoleArea = () => {
-	return (
-		<div className="backdrop-retro-light h-[420px] bg-black text-white py-6 flex flex-col gap-6 overflow-hidden">
-			<Marquee className="shrink-0">
-				<img
-					src="/assets/illustrations/xpress.svg"
-					alt="Game X.PRESS"
-					className="h-12 fill-white inline-block mr-10"
-				/>
-				<img
-					src="/assets/illustrations/xpress.svg"
-					alt="Game X.PRESS"
-					className="h-12 fill-white inline-block mr-10"
-				/>
-				<img
-					src="/assets/illustrations/xpress.svg"
-					alt="Game X.PRESS"
-					className="h-12 fill-white inline-block mr-10"
-				/>
-			</Marquee>
-			<Marquee className="shrink-0">
-				<img
-					src="/assets/illustrations/gamejam.svg"
-					alt="Game X.PRESS"
-					className="h-6 fill-white inline-block mr-10"
-				/>
-				<img
-					src="/assets/illustrations/gamejam.svg"
-					alt="Game X.PRESS"
-					className="h-6 fill-white inline-block mr-10"
-				/>
-				<img
-					src="/assets/illustrations/gamejam.svg"
-					alt="Game X.PRESS"
-					className="h-6 fill-white inline-block mr-10"
-				/>
-			</Marquee>
-			<div className="px-6">
-				<pre>
-					{`$ sudo ./xpress_event_init -f --no-sandbox
-[ OK ] Boot sequence engaged...
-[ * ] Mounting /opt/X.FER/GameX.PRESS/ 🔥
-[ * ] Patching runtime environment...
-[ * ] Bypassing legacy checks...
-[ERROR] checksum mismatch... ignoring
-[ OK ] Core injection successful.
-
->> INITIALIZING: PARTICIPANT CODEX [█████████░░░░░░░░░] 47%
->> LINKING: FER STUDENT HUB [██████████████░░░░░░░░] 68%
->> LOADING: CODE OF CONDUCT... COMPLETE.
-
-# CODEX INJECTION:
- - Respect. Inclusion. Professionalism.
- - 🛑 Zero tolerance for harassment, cheating, sabotage.
- - 🚨 Violators = EJECT + BANISH.`}
-				</pre>
-			</div>
-		</div>
-	);
-};
-
-const NavigationArea = () => {
-	return (
-		<div className="backdrop-retro flex flex-col gap-6 p-6 bg-section-weak">
-			<div className="p-4 backdrop-retro">Eligibility Team size</div>
-
-			<div className="p-4 backdrop-retro-light bg-black text-white">
-				Theme & Content
-			</div>
-
-			<div className="p-4 backdrop-retro-light bg-black text-white">
-				Scoring
-			</div>
-
-			<div className="p-4 backdrop-retro-light bg-black text-white">Prizes</div>
-
-			<div className="p-4 backdrop-retro-light bg-black text-white">
-				Register
-			</div>
-		</div>
-	);
-};
-
-const AboutSection = () => {
-	return (
-		<div className="backdrop-retro bg-section-weak h-[60vh]">
-			<FloatingWindow>
-				<p>
-					The theme of Game X.PRESS is secret and will be revealed at the
-					official start of the event.
-					<br />
-					You have complete creative freedom in choosing how you build your
-					game. This includes:
-					<br />
-					Genre - Anything from Adventure, Puzzle, Simulation, FPS, MOBA,
-					Platformer, etc.
-					<br />
-					Style - 2D, 3D, pixel art, low poly, minimalist, text-based, or
-					anything else that suits your game
-					<br />
-					Technology - You may use any engine or tools (e.g. Unity, Unreal
-					Engine, Godot, PyGame, custom engines) Choose whatever suits your
-					team's skills and vision best. Your originality and execution are what
-					count.
-				</p>
-			</FloatingWindow>
-		</div>
-	);
-};
-
-const FooterSection = () => {
-	return (
-		<div className="backdrop-retro bg-section-weak h-[60vh]">
-			<FloatingWindow>
-				<p>
-					The theme of Game X.PRESS is secret and will be revealed at the
-					official start of the event.
-					<br />
-					You have complete creative freedom in choosing how you build your
-					game. This includes:
-					<br />
-					Genre - Anything from Adventure, Puzzle, Simulation, FPS, MOBA,
-					Platformer, etc.
-					<br />
-					Style - 2D, 3D, pixel art, low poly, minimalist, text-based, or
-					anything else that suits your game
-					<br />
-					Technology - You may use any engine or tools (e.g. Unity, Unreal
-					Engine, Godot, PyGame, custom engines) Choose whatever suits your
-					team's skills and vision best. Your originality and execution are what
-					count.
-				</p>
-			</FloatingWindow>
-		</div>
-	);
-};
+import { HeaderBanner } from '@/global/components/header-banner';
+import { AboutSection } from '@/global/components/about-section';
+import { NavigationArea } from '@/global/components/navigation-area';
+import { ConsoleArea } from '@/global/components/console-area';
+import { useState } from 'react';
 
 export const LandingPage = () => {
+	const [currentPage, setCurrentPage] = useState(0);
+	const totalPages = 5;
+
 	return (
-		<div className="flex flex-col gap-6 p-2 md:p-4 lg:p-8 w-full h-full">
-			<BannerArea />
-			{/* <div className="flex flex-col w-full md:flex-row gap-6">
-				<div className="fixed flex flex-col gap-6 shrink-0 md:w-[568px] md:max-w-1/3 grow-1">
+		<div className="flex flex-col w-full min-h-screen p-1 md:p-3 lg:p-5">
+			<HeaderBanner />
+			<div className="flex flex-1 w-full gap-6 ">
+				{/* Left column */}
+				<div className="flex flex-col gap-6 w-full md:w-[350px] max-w-full md:max-w-[350px]">
 					<ConsoleArea />
-					<NavigationArea />
+					<NavigationArea currentPage={currentPage} />
 				</div>
-				<div className="flex flex-col gap-6 grow-1 shrink-0 h-fit">
-					<AboutSection />
-					<AboutSection />
-					<AboutSection />
-					<FooterSection />
+				{/* Right column (Wizard) */}
+				<div className="flex-1 flex flex-col gap-6 overflow-y-auto">
+					<div className="flex flex-row justify-between items-center mb-4">
+						<button
+							disabled={currentPage === 0}
+							onClick={() => setCurrentPage((p) => Math.max(0, p - 1))}
+							className="px-4 py-2 bg-black text-white rounded disabled:opacity-50"
+						>
+							Previous
+						</button>
+						<span className="text-lg font-bold">
+							Step {currentPage + 1} of {totalPages}
+						</span>
+						<button
+							disabled={currentPage === totalPages - 1}
+							onClick={() =>
+								setCurrentPage((p) => Math.min(totalPages - 1, p + 1))
+							}
+							className="px-4 py-2 bg-black text-white rounded disabled:opacity-50"
+						>
+							Next
+						</button>
+					</div>
+					{/* Wizard pages (AboutSection as placeholder) */}
+					{Array.from({ length: totalPages }).map((_, idx) => (
+						<div
+							key={idx}
+							style={{ display: idx === currentPage ? 'block' : 'none' }}
+						>
+							<AboutSection />
+						</div>
+					))}
 				</div>
-			</div> */}
+			</div>
 		</div>
 	);
 };

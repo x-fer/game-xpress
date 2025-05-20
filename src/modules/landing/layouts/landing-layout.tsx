@@ -1,5 +1,5 @@
-import { FC, PropsWithChildren } from 'react';
+import { PropsWithChildren } from 'react';
 
-export const LandingLayout: FC<PropsWithChildren> = ({ children }) => {
+export const LandingLayout = ({ children }: PropsWithChildren) => {
 	return <>{children}</>;
 };
