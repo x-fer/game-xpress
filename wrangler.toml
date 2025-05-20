@@ -1,0 +1,5 @@
+[build]
+command = "bun run build"
+[build.environment]
+RUNTIME = "bun"
+BUN_VERSION = "1.0.30"
