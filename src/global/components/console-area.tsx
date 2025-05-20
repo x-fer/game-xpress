@@ -89,7 +89,7 @@ export const ConsoleArea = () => {
 			if (idxRef.current >= fullText.length) {
 				clearInterval(interval);
 			}
-		}, 5);
+		}, 50);
 		return () => clearInterval(interval);
 	}, [fullText]);
 

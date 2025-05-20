@@ -9,7 +9,7 @@ export const LandingPage = () => {
 	const totalSteps = 5;
 
 	return (
-		<div className="flex flex-col w-full min-h-screen p-3 md:p-3 lg:p-5 gap-6">
+		<div className="flex flex-col w-full min-h-screen py-3 pl-2 pr-3 md:p-4 lg:p-5 gap-6">
 			<HeaderBanner />
 			<div className="flex flex-col md:flex-row flex-1 w-full gap-6">
 				{/* Console */}

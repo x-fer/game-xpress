@@ -41,7 +41,7 @@ const FloatingWindow = () => {
 				</p>
 
 				<p className="mt-6  text-bsod hover:text-bsod/75">
-					<Link href="/ordinance" className="underline">
+					<Link href="/2025/ordinance" className="underline">
 						Read the full ordinance document →
 					</Link>
 				</p>
@@ -105,7 +105,7 @@ const FloatingWindow = () => {
 				</p>
 
 				<p className="mt-6 text-bsod hover:text-bsod/75">
-					<Link href="/grading-criteria" className="underline">
+					<Link href="/2025/grading-criteria" className="underline">
 						View detailed grading criteria →
 					</Link>
 				</p>
