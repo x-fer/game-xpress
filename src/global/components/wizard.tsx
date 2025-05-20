@@ -20,7 +20,32 @@ const WizardProvider: FC<{
 
 	return (
 		<wizardContext.Provider value={{ currentStep, setCurrentStep, totalSteps }}>
-			{children}
+			<div className="flex flex-col gap-6 w-full">
+				<div className="flex flex-row justify-between items-center mb-4 w-full">
+					<button
+						onClick={() => {
+							const prevStep = Math.max(1, currentStep - 1);
+							setCurrentStep(prevStep);
+						}}
+						className="px-4 py-2 bg-black text-white rounded disabled:opacity-50"
+					>
+						Previous
+					</button>
+					<span className="text-lg font-bold">
+						Step {currentStep} of {totalSteps}
+					</span>
+					<button
+						onClick={() => {
+							const nextStep = Math.min(totalSteps, currentStep + 1);
+							setCurrentStep(nextStep);
+						}}
+						className="px-4 py-2 bg-black text-white rounded disabled:opacity-50"
+					>
+						Next
+					</button>
+				</div>
+				{children}
+			</div>
 		</wizardContext.Provider>
 	);
 };
@@ -33,7 +58,7 @@ export const Wizard: FC<
 > = ({ children, className, totalSteps, initialStep, ...props }) => {
 	return (
 		<WizardProvider totalSteps={totalSteps} initialStep={initialStep}>
-			<div className={cn('flex flex-row', className)} {...props}>
+			<div className={cn('flex flex-row w-full', className)} {...props}>
 				{children}
 			</div>
 		</WizardProvider>
