@@ -1,7 +1,6 @@
 import '@/styles/index.css';
 
 import { type Metadata } from 'next';
-import { Toaster } from 'sonner';
 
 import localFont from 'next/font/local';
 
@@ -38,10 +37,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang="en" className={`bg-background ${pixelFont.className}`}>
-			<body className="min-h-screen">
-				{children}
-				<Toaster />
-			</body>
+			<body className="min-h-screen">{children}</body>
 		</html>
 	);
 }
