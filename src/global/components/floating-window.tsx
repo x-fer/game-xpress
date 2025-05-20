@@ -81,7 +81,7 @@ No registration fee is required.`
 				<ReactMarkdown
 					components={{
 						div: ({ children }) => (
-							<div className="prose prose-invert prose-headings:mb-4 prose-headings:mt-0 prose-p:mt-4 prose-p:mb-4 prose-ul:mt-2 prose-li:mt-0 prose-li:mb-1 max-w-none">
+							<div className="prose prose-invert prose-headings:mb-4 prose-headings:mt-0 prose-p:mt-4 prose-p:mb-4 prose-ul:mt-2 prose-li:mt-0 prose-li:mb-1 max-w-none font-sans">
 								{children}
 							</div>
 						)
