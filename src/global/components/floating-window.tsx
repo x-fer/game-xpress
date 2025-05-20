@@ -1,9 +1,9 @@
-import { PropsWithChildren, useContext } from 'react';
+import { useContext } from 'react';
 import { DottedBar } from './dotted-bar';
 import { wizardContext } from './wizard';
-import ReactMarkdown from 'react-markdown';
+import Link from 'next/link';
 
-const FloatingWindow = ({ children }: PropsWithChildren) => {
+const FloatingWindow = () => {
 	const { currentStep } = useContext(wizardContext);
 
 	const steps = [
@@ -38,6 +38,12 @@ const FloatingWindow = ({ children }: PropsWithChildren) => {
 					association presidency. If a participant has a professional,
 					mentoring, or family connection with a jury member, this must be
 					reported in advance.
+				</p>
+
+				<p className="mt-6  text-bsod hover:text-bsod/75">
+					<Link href="/ordinance" className="underline">
+						Read the full ordinance document →
+					</Link>
 				</p>
 			</>
 		),
@@ -96,6 +102,12 @@ const FloatingWindow = ({ children }: PropsWithChildren) => {
 				<p>
 					The pitch must be up to 3 minutes long and presented by all team
 					members.
+				</p>
+
+				<p className="mt-6 text-bsod hover:text-bsod/75">
+					<Link href="/grading-criteria" className="underline">
+						View detailed grading criteria →
+					</Link>
 				</p>
 			</>
 		),
