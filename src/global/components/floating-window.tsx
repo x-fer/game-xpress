@@ -10,7 +10,7 @@ const FloatingWindow = () => {
 		'Eligibility & team rules',
 		'Theme implementation',
 		'Evaluation & scoring',
-		'Prizes & bonuses',
+		'Bonus points & special awards',
 		'Registration'
 	];
 
