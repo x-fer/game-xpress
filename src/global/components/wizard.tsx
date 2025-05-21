@@ -22,14 +22,14 @@ const WizardProvider: FC<{
 		<wizardContext.Provider value={{ currentStep, setCurrentStep, totalSteps }}>
 			<div className="flex flex-col gap-4 w-full">
 				<div className="flex flex-row justify-between items-center w-full relative">
-					<div className="w-[100px]">
+					<div className="w-20 sm:w-28">
 						{currentStep > 1 && (
 							<button
 								onClick={() => {
 									const prevStep = Math.max(1, currentStep - 1);
 									setCurrentStep(prevStep);
 								}}
-								className="cursor-pointer px-4 py-2 backdrop-retro bg-black text-white disabled:opacity-50"
+								className="w-full text-xs sm:text-base cursor-pointer px-2 sm:px-4 py-1.5 sm:py-2 backdrop-retro bg-black text-white disabled:opacity-50 text-center"
 							>
 								PREVIOUS
 							</button>
@@ -38,14 +38,14 @@ const WizardProvider: FC<{
 					<span className="text-lg font-bold absolute left-1/2 -translate-x-1/2">
 						Step {currentStep} of {totalSteps}
 					</span>
-					<div className="w-[100px] flex justify-end">
+					<div className="w-20 sm:w-28 flex justify-end">
 						{currentStep < totalSteps && (
 							<button
 								onClick={() => {
 									const nextStep = Math.min(totalSteps, currentStep + 1);
 									setCurrentStep(nextStep);
 								}}
-								className="cursor-pointer px-4 py-2 bg-black backdrop-retro text-white disabled:opacity-50"
+								className="w-full text-xs sm:text-base cursor-pointer px-2 sm:px-4 py-1.5 sm:py-2 bg-black backdrop-retro text-white disabled:opacity-50 text-center"
 							>
 								NEXT
 							</button>
