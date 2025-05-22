@@ -12,7 +12,8 @@ const pixelFont = localFont({
 const baseUrl = process.env.NEXT_PUBLIC_URL || 'https://game-xpress.xfer.hr';
 
 export const metadata: Metadata = {
-	title: 'Game X.Press',
+	title:
+		'Game X.Press 2025 - 24h Game Jam in Zagreb | Game Development Competition',
 	description:
 		'Game jam by X.FER | May 31-June 1 (24h) @ Algebra (Gradišćanska 24) | Any genre, style or technology allowed | Anyone 18+ can compete (students prioritized)',
 	metadataBase: new URL('https://game-xpress.xfer.hr'),
@@ -27,7 +28,12 @@ export const metadata: Metadata = {
 		'Algebra',
 		'Croatia',
 		'gaming',
-		'game design'
+		'game design',
+		'game development competition',
+		'student hackathon',
+		'indie game development',
+		'game programming',
+		'2025 game jam'
 	],
 	authors: [{ name: 'X.FER' }],
 	creator: 'X.FER',
@@ -45,7 +51,8 @@ export const metadata: Metadata = {
 		{ rel: 'icon', url: '/assets/logo.png', sizes: '512x512' }
 	],
 	openGraph: {
-		title: 'Game X.Press',
+		title:
+			'Game X.Press 2025 - 24h Game Jam in Zagreb | Game Development Competition',
 		description:
 			'Game jam by X.FER | May 31-June 1 (24h) @ Algebra (Gradišćanska 24) | Any genre, style or technology allowed | Anyone 18+ can compete (students prioritized)',
 		url: baseUrl,
@@ -63,7 +70,8 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Game X.Press',
+		title:
+			'Game X.Press 2025 - 24h Game Jam in Zagreb | Game Development Competition',
 		description:
 			'Game jam by X.FER | May 31-June 1 (24h) @ Algebra (Gradišćanska 24) | Any genre, style or technology allowed | Anyone 18+ can compete (students prioritized)',
 		images: ['/assets/cover.png']
@@ -76,6 +84,8 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={`bg-background ${pixelFont.className}`}>
 			<head>
+				<link rel="icon" href="/assets/logo.png?v=2025" />
+				<link rel="apple-touch-icon" href="/assets/logo.png?v=2025" />
 				<link rel="manifest" href="/manifest.json" />
 				<meta name="theme-color" content="#e40100" />
 			</head>
