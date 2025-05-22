@@ -11,7 +11,7 @@ const FloatingWindow = () => {
 		'Theme implementation',
 		'Evaluation & scoring',
 		'Bonus points & special awards',
-		'Registration'
+		'Registration & socials'
 	];
 
 	const stepContent = {
@@ -157,6 +157,42 @@ const FloatingWindow = () => {
 					account your field and year of study, experience in relevant
 					competitions, game-related projects, or industry work.
 				</p>
+
+				<div className="mt-6 space-y-2">
+					<p className="font-bold">Follow us on social media:</p>
+					<div className="space-y-1">
+						<p>
+							<a
+								href="https://www.instagram.com/game_x.press/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-bsod hover:text-bsod/75 underline"
+							>
+								Instagram →
+							</a>
+						</p>
+						<p>
+							<a
+								href="https://www.linkedin.com/showcase/game-x-press"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-bsod hover:text-bsod/75 underline"
+							>
+								LinkedIn →
+							</a>
+						</p>
+						<p>
+							<a
+								href="https://discord.com/invite/rvQzRB6WHb"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-bsod hover:text-bsod/75 underline"
+							>
+								Discord →
+							</a>
+						</p>
+					</div>
+				</div>
 			</>
 		)
 	};
