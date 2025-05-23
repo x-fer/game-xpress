@@ -127,6 +127,7 @@ export const ConsoleArea = () => {
 
 	return (
 		<div className="backdrop-retro-light h-full max-h-full bg-black text-white py-6 flex flex-col gap-6 overflow-hidden ">
+			<h1 className="sr-only">Game X.PRESS Game Jam</h1>
 			<Marquee className="shrink-0">
 				<img
 					src="/assets/illustrations/xpress.svg"
@@ -147,17 +148,17 @@ export const ConsoleArea = () => {
 			<Marquee className="shrink-0">
 				<img
 					src="/assets/illustrations/gamejam.svg"
-					alt="Game X.PRESS"
+					alt="Game Jam"
 					className="h-6 fill-white inline-block mr-10"
 				/>
 				<img
 					src="/assets/illustrations/gamejam.svg"
-					alt="Game X.PRESS"
+					alt="Game Jam"
 					className="h-6 fill-white inline-block mr-10"
 				/>
 				<img
 					src="/assets/illustrations/gamejam.svg"
-					alt="Game X.PRESS"
+					alt="Game Jam"
 					className="h-6 fill-white inline-block mr-10"
 				/>
 			</Marquee>
