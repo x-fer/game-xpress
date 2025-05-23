@@ -12,10 +12,9 @@ const pixelFont = localFont({
 const baseUrl = process.env.NEXT_PUBLIC_URL || 'https://game-xpress.xfer.hr';
 
 export const metadata: Metadata = {
-	title:
-		'Game X.Press 2025 - 24h Game Jam in Zagreb | Game Development Competition',
+	title: 'Game X.Press 2025 - 24h Game Jam in Zagreb',
 	description:
-		'Game jam by X.FER | May 31-June 1 (24h) @ Algebra (Gradišćanska 24) | Any genre, style or technology allowed | Anyone 18+ can compete (students prioritized)',
+		'Game jam by X.FER | Algebra Bernays Campus (Gradišćanska 24) | Any genre, style or technology allowed | Anyone 18+ can compete (students prioritized)',
 	metadataBase: new URL('https://game-xpress.xfer.hr'),
 	keywords: [
 		'game jam',
