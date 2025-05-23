@@ -225,15 +225,31 @@ const FloatingWindow = () => {
 
 	return (
 		<div className="relative w-full border backdrop-retro-light bg-section">
-			<div className="bg-bsod flex items-center justify-between h-8 px-2 font-mono text-sm text-white">
-				<DottedBar />
-				<span className="px-2 underline text-white whitespace-nowrap">
-					{steps[currentStep - 1]}
-				</span>
-				<DottedBar />
-			</div>
+			{steps.map((stepTitle, index) => (
+				<div
+					key={index}
+					className={`bg-bsod flex items-center justify-between h-8 px-2 font-mono text-sm text-white ${
+						currentStep === index + 1 ? 'block' : 'hidden'
+					}`}
+					aria-hidden={currentStep !== index + 1}
+				>
+					<DottedBar />
+					<h2 className="px-2 underline text-white whitespace-nowrap">
+						{stepTitle}
+					</h2>
+					<DottedBar />
+				</div>
+			))}
 			<div className="p-6 space-y-4 font-mono text-sm">
-				{stepContent[currentStep as keyof typeof stepContent]}
+				{Object.entries(stepContent).map(([step, content]) => (
+					<div
+						key={step}
+						className={currentStep === Number(step) ? 'block' : 'hidden'}
+						aria-hidden={currentStep !== Number(step)}
+					>
+						{content}
+					</div>
+				))}
 			</div>
 		</div>
 	);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useId } from 'react';
 
 type DottedBarProps = {
 	rows?: number;
@@ -15,13 +15,14 @@ export const DottedBar = ({
 }: DottedBarProps) => {
 	const patternSize = dotSize + gap;
 	const height = rows * patternSize - gap;
+	const patternId = useId();
 
 	return (
 		<div className="flex-1 flex items-center relative">
 			<svg className="w-full" height={height}>
 				<defs>
 					<pattern
-						id="dotPattern"
+						id={patternId}
 						width={patternSize}
 						height={patternSize}
 						patternUnits="userSpaceOnUse"
@@ -29,7 +30,7 @@ export const DottedBar = ({
 						<rect width={dotSize} height={dotSize} fill="white" />
 					</pattern>
 				</defs>
-				<rect width="100%" height="100%" fill="url(#dotPattern)" />
+				<rect width="100%" height="100%" fill={`url(#${patternId})`} />
 			</svg>
 			{children && (
 				<div className="absolute left-1/2 transform -translate-x-1/2">
