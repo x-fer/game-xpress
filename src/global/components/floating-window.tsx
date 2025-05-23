@@ -22,16 +22,22 @@ const FloatingWindow = () => {
 					least 18 years old at the time of the event.
 				</p>
 
+				<br />
+
 				<p>
 					Every participant can only be part of one team. Once the GameJam
 					begins, no team changes are allowed.
 				</p>
+
+				<br />
 
 				<p>
 					If there are too many applicants, teams with currently enrolled
 					bachelor's or master's students may be prioritized. Proof of identity
 					and student status may be requested.
 				</p>
+
+				<br />
 
 				<p>
 					Team members must not include organizers or members of the X.FER
@@ -55,7 +61,11 @@ const FloatingWindow = () => {
 					Campus (Gradišćanska ul. 24).
 				</p>
 
+				<br />
+
 				<p>Each team must create a game that clearly reflects the theme.</p>
+
+				<br />
 
 				<p>
 					The degree of theme integration is evaluated using a tiered system:
@@ -73,6 +83,8 @@ const FloatingWindow = () => {
 					</li>
 				</ul>
 
+				<br />
+
 				<p>
 					Games that do not implement the theme at all will receive 0 points in
 					this category and be disqualified from the competition.
@@ -88,6 +100,8 @@ const FloatingWindow = () => {
 					bonus points earned.
 				</p>
 
+				<br />
+
 				<p>The main categories are:</p>
 				<ul className="list-disc pl-6 space-y-1">
 					<li>Gameplay and game design (25%)</li>
@@ -98,6 +112,8 @@ const FloatingWindow = () => {
 					<li>Game pitch (10%)</li>
 					<li>Deployment to itch.io (5%)</li>
 				</ul>
+
+				<br />
 
 				<p>
 					The pitch must be up to 3 minutes long and presented by all team
@@ -115,6 +131,8 @@ const FloatingWindow = () => {
 			<>
 				<p>Teams can earn up to 20 bonus points.</p>
 
+				<br />
+
 				<p>
 					You can get up to +5 bonus points for including one of the following
 					features:
@@ -128,12 +146,16 @@ const FloatingWindow = () => {
 					</li>
 				</ul>
 
+				<br />
+
 				<p>An additional +5 points each are awarded to the best games in:</p>
 				<ul className="list-disc pl-6 space-y-1">
 					<li>Audio</li>
 					<li>Graphics</li>
 					<li>Overall game</li>
 				</ul>
+
+				<br />
 
 				<p>Only one optional design challenge bonus can be counted per team.</p>
 			</>
@@ -146,11 +168,15 @@ const FloatingWindow = () => {
 					website.
 				</p>
 
+				<br />
+
 				<p>
 					Each team must assign a representative for all official communication.
 					Applications may close early if the maximum number of teams is
 					reached.
 				</p>
+
+				<br />
 
 				<p>
 					There is no registration fee. The selection process may take into
