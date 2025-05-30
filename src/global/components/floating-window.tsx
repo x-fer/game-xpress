@@ -11,7 +11,8 @@ const FloatingWindow = () => {
 		'Theme implementation',
 		'Evaluation & scoring',
 		'Bonus points & special awards',
-		'Registration & socials'
+		'Registration & socials',
+		'Partners & sponsors'
 	];
 
 	const stepContent = {
@@ -219,6 +220,62 @@ const FloatingWindow = () => {
 						</p>
 					</div>
 				</div>
+			</>
+		),
+		6: (
+			<>
+				<div className="flex items-center justify-center mb-6">
+					<a
+						href="https://judge0.com"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="hover:opacity-75 transition-opacity"
+					>
+						<img
+							src="/assets/partners/2025/Judge0-black.svg"
+							alt="Judge0"
+							className="h-12"
+						/>
+					</a>
+				</div>
+
+				<p className="text-center font-bold mb-4 text-bsod">
+					Proud Partner of Game X.Press 2025
+				</p>
+
+				<p>
+					<strong>Judge0</strong> is a robust, scalable, and open-source online
+					code execution system perfect for competitive programming platforms,
+					e-learning platforms, and online IDEs.
+				</p>
+
+				<br />
+
+				<p>
+					Supports 60+ programming languages with sandboxed execution, rich API
+					documentation, and scalable architecture - perfect for building
+					applications that need online code execution features.
+				</p>
+
+				<br />
+
+				<p>
+					<strong>Judge0 IDE</strong> is a free and open-source online code
+					editor that allows you to write and execute code from a rich set of
+					languages - perfect for learning, teaching, or trying out new
+					languages.
+				</p>
+
+				<p className="mt-6 text-bsod hover:text-bsod/75">
+					<a
+						href="https://judge0.com"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="underline"
+					>
+						Learn more about Judge0 →
+					</a>
+				</p>
 			</>
 		)
 	};

@@ -6,7 +6,7 @@ import { ConsoleArea } from '@/global/components/console-area';
 import { Wizard } from '@/global/components/wizard';
 
 export const LandingPage = () => {
-	const totalSteps = 5;
+	const totalSteps = 6;
 
 	return (
 		<div className="flex flex-col w-full min-h-screen py-3 pl-2 pr-3 md:p-4 lg:p-5 gap-6">
