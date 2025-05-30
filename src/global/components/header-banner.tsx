@@ -7,7 +7,7 @@ export const HeaderBanner = ({}: {}) => {
 			<Marquee className="flex-1">
 				{new Array(10).fill(0).map((_, index) => (
 					<p className="text-center inline-block mr-6" key={index}>
-						Registrations open
+						Registrations closed
 					</p>
 				))}
 			</Marquee>
